@@ -15,7 +15,9 @@ Sørensen 26.0, Thompson 41.0 som redan ligger i Shopify).
 | `reference/bottles/` | Nedladdade flaskbilder (1024 px) för 1.0–10.0. Skickas som referensbild till modellen. |
 | `reference/existing-notes-images/` | De fem noter-bilder som redan finns i Shopify, som stilreferens. |
 | `prompts/` | Färdiga prompts per parfym (genereras av `scripts/generate.py`). Kan klistras in manuellt i Gemini/AI Studio tillsammans med flaskbilden. |
-| `output/` | Genererade bilder. 1.0–10.0 är gjorda med Nano Banana Pro (`gemini-3-pro-image`, 2K, JPEG). `02_pasteur_noter_gpt.png` är jämförelsebilden från gpt-image-2. |
+| `output/final/` | **Färdiga bilder 1.0–10.0**: gpt-image-2 i 2048 px, normaliserade så att flaskan har exakt samma storlek och position i alla bilder. |
+| `output/*_noter_gpt.png` | Råa gpt-image-2-bilder före normalisering. |
+| `output/*_noter.jpg` | Nano Banana Pro-versionerna (samma prompt) som alternativ. |
 
 ## Köra genereringen
 
@@ -36,6 +38,17 @@ Storlek: `--size 1K|2K|4K` (default 2K = 2048 px, samma som befintliga noter-bil
 GPT Image som alternativ: `python3 scripts/generate.py --provider openai --model gpt-image-2 --skus 2` (kräver `OPENAI_API_KEY`, max 1024 px).
 
 `--style-ref` skickar en färdig, godkänd bild som bild 2 till modellen så att vinkel, ljus och inramning hålls konsekvent. `reference/style-ref.jpg` (Avogadro 6.0) är den bild som användes för 1.0–10.0: kamera ca 20° ovanifrån, helt vit bakgrund, allt inom de centrala 75 % av bilden.
+
+## Slutligt flöde (det som användes för 1.0–10.0)
+
+```bash
+python3 scripts/generate.py --provider openai --model gpt-image-2 --size 2K --style-ref reference/style-ref.jpg --skus 1-10
+python3 scripts/normalize.py output/*_noter_gpt.png --out output/final --cap-top 0.15 --fit
+```
+
+`normalize.py` mäter kapsylens överkant och bredd i varje bild (bakgrunden är helt vit) och skalar/förskjuter så att
+alla flaskor får samma storlek och plats. `--fit` väljer den största storlek som ryms i alla bilder utan att någon
+ingrediens klipps; `--cap-width 0.14` låser samma storlek när fler parfymer körs senare, så nya bilder matchar de gamla.
 
 ## Manuellt i Gemini-appen / AI Studio
 
