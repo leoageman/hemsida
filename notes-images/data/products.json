@@ -1,0 +1,3036 @@
+[
+  {
+    "number": 1,
+    "name": "Béchamp",
+    "title": "Béchamp 1.0",
+    "sku": "1",
+    "product_id": "gid://shopify/Product/8766459019606",
+    "handle": "inspired-by-most-wanted",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "azzaro most wanted edp intense"
+    ],
+    "description": "Denna doft börjar med en frisk ton av kardemumma, övergår sedan till djup kola och landar i den lyxiga värmen av amberträ. En förfinad blandning för älskare av söta, gourmand-dofter.",
+    "notes": {
+      "top": [
+        "Kardemumma"
+      ],
+      "middle": [
+        "Kola"
+      ],
+      "base": [
+        "Amberträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/1flaska_69b88e84-146f-4bb2-93e2-6553849dde0d.png?v=1758733728",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/BechampNoter_e93ae89a-cfc2-419c-a3b3-dc136c58bb8e.jpg?v=1767111445",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/1flaska_69b88e84-146f-4bb2-93e2-6553849dde0d.png?v=1758733728",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/BechampNoter_e93ae89a-cfc2-419c-a3b3-dc136c58bb8e.jpg?v=1767111445",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "name": "Pasteur",
+    "title": "Pasteur 2.0",
+    "sku": "2",
+    "product_id": "gid://shopify/Product/8774407979350",
+    "handle": "pasteur-2-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "emporio armani stronger with you giorgio armani"
+    ],
+    "description": "Denna doft öppnar med varm kastanj och söt socker, utvecklas med salvia och lavendel, och landar i vanilj med en hint av rök – en sofistikerad blandning för älskare av nyanserad vanilj, kryddor och trä.",
+    "notes": {
+      "top": [
+        "Kastanj",
+        "Socker"
+      ],
+      "middle": [
+        "Salvia",
+        "Lavendel"
+      ],
+      "base": [
+        "Vanilj",
+        "Rökelse"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/2flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/2flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "name": "Sabatier",
+    "title": "Sabatier 3.0",
+    "sku": "3",
+    "product_id": "gid://shopify/Product/8785854333270",
+    "handle": "inspired-by-sauvage-sabatier-3-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "dior sauvage edt"
+    ],
+    "description": "En fräsch och maskulin doft som kombinerar saftig bergamott med kryddiga toner av peppar och lavendel. Basen är varm och träig, med ambroxan och cederträ som ger ett sofistikerat djup.",
+    "notes": {
+      "top": [
+        "Siciliansk Apelsin",
+        "Kalabrisk Bergamott",
+        "Siciliansk Citron"
+      ],
+      "middle": [
+        "Aromatisk lavendel",
+        "Stjärnanis",
+        "Muskatellsalvia",
+        "Elemi"
+      ],
+      "base": [
+        "Vit Mysk",
+        "Madagaskisk Vanilj",
+        "Amberträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/3flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/3flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "name": "Bachelder",
+    "title": "Bachelder 4.0",
+    "sku": "4",
+    "product_id": "gid://shopify/Product/8848274424150",
+    "handle": "inspired-by-barracat-rouge",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "baccarat rouge 540 maison francis kurkdjian perfume"
+    ],
+    "description": "Denna doft öppnar med saffrans lyxiga värme och jasminens söta lockelse, utvecklas med rika, djupa toner av amberträ och ambra, och landar i en omfamnande bas av grankåda och cederträ – en sofistikerad blandning för älskare av förfinat trä och subtil krydda.",
+    "notes": {
+      "top": [
+        "Saffran",
+        "Jasmin"
+      ],
+      "middle": [
+        "Amberträ",
+        "Ambra"
+      ],
+      "base": [
+        "Grankåda",
+        "Cederträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/4flaska.png?v=1758730744",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/4flaska.png?v=1758730744",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "name": "Haldane",
+    "title": "Haldane 5.0",
+    "sku": "5",
+    "product_id": "gid://shopify/Product/8848292086102",
+    "handle": "haldane",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "dior homme intense 2011 dior for men"
+    ],
+    "description": "Denna doft börjar med den fridfulla fräschören av lavendel, övergår smidigt till ett sofistikerat hjärta av iris, ambrette och en antydan av päron, och avslutas med en robust bas av Virginia-ceder och vetiver—en förfinad komposition för älskare av eleganta blomnoter och livfulla träiga toner.",
+    "notes": {
+      "top": [
+        "Lavendel"
+      ],
+      "middle": [
+        "Iris",
+        "Ambrette (Myskmalva)",
+        "Päron"
+      ],
+      "base": [
+        "Virginia-ceder",
+        "Vetiver"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/5flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/5flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "name": "Avogadro",
+    "title": "Avogadro 6.0",
+    "sku": "6",
+    "product_id": "gid://shopify/Product/8849273618774",
+    "handle": "inspired-by-acqua-di-gio-profumo",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "acqua di gio giorgio armani for men"
+    ],
+    "description": "Denna doft öppnar med den friska klarheten av havsnoter och den livliga ljusheten av bergamott, utvecklas genom det aromatiska hjärtat av rosmarin, salvia och geranium, och fördjupas till en mystisk bas av rökelse och patchouli—en fängslande blandning för älskare av fräscha akvatiska och rika örtartade dofter.",
+    "notes": {
+      "top": [
+        "Havsnoter",
+        "Bergamott"
+      ],
+      "middle": [
+        "Rosmarin",
+        "Salvia",
+        "Geranium"
+      ],
+      "base": [
+        "Rökelse",
+        "Patchouli"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/6nyflaska.png?v=1758747794",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/6nyflaska.png?v=1758747794",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "name": "Sanger",
+    "title": "Sanger 7.0",
+    "sku": "7",
+    "product_id": "gid://shopify/Product/8849274077526",
+    "handle": "sanger-7-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "santal 33 le labo"
+    ],
+    "description": "Denna doft fängslar med den rika och krämiga texturen av sandelträ, kompletterad av den lyxiga djupheten av läder och papyrus. Den utvecklas sedan till en harmonisk blandning av Virginia-ceder, delikat viol och kryddig kardemumma, och avslutas med en mjuk touch av iris och varm amber—en komplex och fascinerande komposition för finsmakare av sofistikerade, träiga dofter.",
+    "notes": {
+      "top": [
+        "Sandelträ",
+        "Läder",
+        "Papyrus"
+      ],
+      "middle": [
+        "Virginia-ceder",
+        "Viol",
+        "Kardemumma"
+      ],
+      "base": [
+        "Iris",
+        "Amberträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/7flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/7flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "name": "Linnet",
+    "title": "Linnet 8.0",
+    "sku": "8",
+    "product_id": "gid://shopify/Product/8849274601814",
+    "handle": "linnet",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "prada l'homme"
+    ],
+    "description": "Denna doft börjar med en stimulerande blandning av neroli, svartpeppar, kardemumma och morotsfrön, vilket skapar en unik och uppfriskande öppning. Den övergår till ett hjärta av iris, viol, geranium och mate, som balanserar blomsterfiness med en antydan av örtig fräschör. Kompositionen landar i en varm bas av amber, cederträ, sandelträ och patchouli—en förfinad och modern doft för älskare av djupa, komplexa dofter.",
+    "notes": {
+      "top": [
+        "Neroli",
+        "Svartpeppar",
+        "Kardemumma",
+        "Morotsfrön"
+      ],
+      "middle": [
+        "Iris",
+        "Viol",
+        "Geranium",
+        "Mate"
+      ],
+      "base": [
+        "Amberträ",
+        "Cederträ",
+        "Sandelträ",
+        "Patchouli"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/8flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/8flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "name": "Arfwedson",
+    "title": "Arfwedson 9.0",
+    "sku": "9",
+    "product_id": "gid://shopify/Product/8849275191638",
+    "handle": "inspired-by-absolu-aventus",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "absolu aventus creed"
+    ],
+    "description": "Denna doft exploderar med frisk grapefrukt, bergamott och svartvinbär. Den övergår till ett livfullt hjärta av ingefära, kanel, citron och kardemumma, innan den avslutas med en djärv bas av rosépeppar, patchouli och vetiver—en dynamisk och energisk blandning för den moderna mannen.",
+    "notes": {
+      "top": [
+        "Grapefrukt",
+        "Bergamott",
+        "Svartvinbär"
+      ],
+      "middle": [
+        "Ingefära",
+        "Kanel",
+        "Citron",
+        "Kardemumma"
+      ],
+      "base": [
+        "Rosépeppar",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/9flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/9flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "name": "Berzelius",
+    "title": "Berzelius 10.0",
+    "sku": "10",
+    "product_id": "gid://shopify/Product/8849275519318",
+    "handle": "inspired-by-the-fireplace",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "by the fireplace maison martin margiela"
+    ],
+    "description": "Denna doft öppnar med den kryddiga värmen från kryddnejlika, friskheten av rosépeppar och den söta dragningskraften hos apelsinblomma. Den övergår till ett hjärta av kastanj, guajakträ och enbär, vilket skapar ett rikt, träigt mellanparti. Upplevelsen avslutas med en tröstande bas av vanilj, Peru balsam och cashmeran – en mysig och inbjudande blandning som påminner om en varm brasa.",
+    "notes": {
+      "top": [
+        "Kryddnejlika",
+        "Rosépeppar",
+        "Apelsinblomma"
+      ],
+      "middle": [
+        "Kastanj",
+        "Guajakträ",
+        "Enbär"
+      ],
+      "base": [
+        "Vanilj",
+        "Peru balsam",
+        "Cashmeran"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/10flaska.png?v=1758730746",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/BerzeliusNoter.jpg?v=1767111411",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/10flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/BerzeliusNoter.jpg?v=1767111411",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "name": "Priestley",
+    "title": "Priestley 11.0",
+    "sku": "11",
+    "product_id": "gid://shopify/Product/8849276141910",
+    "handle": "priestley",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "pegasus parfums de marly cologne"
+    ],
+    "description": "Denna doft öppnar med en unik blandning av heliotrop, kummin och bergamott, som leder vidare till ett hjärta av bittermandel, lavendel och jasmin. Den avrundas med en krämig bas av vanilj, sandelträ och amber, vilket ger en rik och lyxig doft.",
+    "notes": {
+      "top": [
+        "Heliotrop",
+        "Kummin",
+        "Bergamott"
+      ],
+      "middle": [
+        "Bittermandel",
+        "Lavendel",
+        "Jasmin"
+      ],
+      "base": [
+        "Vanilj",
+        "Sandelträ",
+        "Amberträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/11flaska.png?v=1758730747",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/11flaska.png?v=1758730747",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "name": "Pariser",
+    "title": "Pariser 12.0",
+    "sku": "12",
+    "product_id": "gid://shopify/Product/8849276830038",
+    "handle": "pariser",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "percival parfums de marly pdm"
+    ],
+    "description": "Denna doft börjar med en livfull blandning av lavendel, mandarin, bergamott och geranium, som ger en uppfriskande och energisk öppning. Den övergår till ett komplext hjärta med noter av hedion, viol, jasmin, koriander och en touch av kanel. Doften avslutas med en djup bas av ambroxan, amberträ, mysk, balsamgran och clearwood, vilket skapar en kraftfull och långvarig finish.",
+    "notes": {
+      "top": [
+        "Lavendel",
+        "Mandarin",
+        "Bergamott",
+        "Geranium"
+      ],
+      "middle": [
+        "Hedion",
+        "Viol",
+        "Jasmin",
+        "Koriander",
+        "Kanel"
+      ],
+      "base": [
+        "Ambroxan",
+        "Amberträ",
+        "Mysk",
+        "Balsamgran",
+        "Clearwood"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/12flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/12flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "name": "Garnett",
+    "title": "Garnett 13.0",
+    "sku": "13",
+    "product_id": "gid://shopify/Product/8849277157718",
+    "handle": "inspired-by-greenley",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "greenley parfums de marly pdm"
+    ],
+    "description": "Denna doft börjar med en frisk blandning av grönt äpple, kalabrisk bergamott och mandarin. Mellannoterna introducerar petitgrain, cederträ, cashmeran och viol, vilket tillför ett blommigt och träigt djup. Den avslutas med en robust bas av ekmossa, mysk och amberträ, som skapar ett långvarigt och fräscht intryck.",
+    "notes": {
+      "top": [
+        "Grönt äpple",
+        "Kalabrisk bergamott",
+        "Mandarin"
+      ],
+      "middle": [
+        "Petitgrain",
+        "Cederträ",
+        "Cashmeran",
+        "Viol"
+      ],
+      "base": [
+        "Ekmossa",
+        "Mysk",
+        "Amberträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/13flaska.png?v=1758730745",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/Garnettnoter.jpg?v=1767108169",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/13flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/ChatGPT_Image_Jun_15_2026_02_25_32_PM.png?v=1781527308",
+        "width": 1254,
+        "height": 1254
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/Garnettnoter.jpg?v=1767108169",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "name": "Scheele",
+    "title": "Scheele 14.0",
+    "sku": "14",
+    "product_id": "gid://shopify/Product/8849277518166",
+    "handle": "scheele-14-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "sublime vanille creed"
+    ],
+    "description": "Denna doft öppnar med den friska zesten av citron och bergamott, som skapar en livlig och upplyftande ton. Den övergår till ett hjärta av varm vanilj och delikat jasmin, som förenar sötma med blommig elegans. Doften avslutas med den krämiga fylligheten av tonkaböna och den mjuka lockelsen av mysk, vilket ger en len och förförisk finish.",
+    "notes": {
+      "top": [
+        "Citron",
+        "Bergamott"
+      ],
+      "middle": [
+        "Vanilj",
+        "Jasmin"
+      ],
+      "base": [
+        "Tonkaböna",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/14flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/14flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "name": "Alimarin",
+    "title": "Alimarin 15.0",
+    "sku": "15",
+    "product_id": "gid://shopify/Product/8893724328278",
+    "handle": "inspired-by-afternoon-swim",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "afternoon swim louis vuitton lv"
+    ],
+    "description": "Denna doft öppnar med en uppfriskande explosion av mandarin, siciliansk apelsin och bergamott, som framkallar känslan av ett varmt eftermiddagsdopp. Ett livligt hjärta av ingefära ger en kryddig friskhet, medan en mjuk bas av ambra skapar ett långvarigt och elegant intryck. Inspirerad av LV:s Afternoon Swim fångar denna doft essensen av en solig dag vid vattnet.",
+    "notes": {
+      "top": [
+        "Mandarin",
+        "Siciliansk apelsin",
+        "Bergamott"
+      ],
+      "middle": [
+        "Ingefära"
+      ],
+      "base": [
+        "Ambra"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/15nyflaska.png?v=1758747795",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/15nyflaska.png?v=1758747795",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "name": "Laurent",
+    "title": "Laurent 16.0",
+    "sku": "16",
+    "product_id": "gid://shopify/Product/8893738156374",
+    "handle": "inspired-by-limmensite",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "l'immensité louis vuitton lv"
+    ],
+    "description": "Denna doft öppnar med en livfull mix av grapefrukt, ingefära och bergamott. Hjärtat innehåller vattniga noter, salvia, rosmarin och geranium, vilket ger ett aromatiskt djup. Den avrundas med en varm bas av ambroxan, amber och labdanum. Inspirerad av LV:s L’Immensité fångar denna doft gränslös energi och förfinad elegans.",
+    "notes": {
+      "top": [
+        "Grapefrukt",
+        "Ingefära",
+        "Bergamott"
+      ],
+      "middle": [
+        "Vattniga noter",
+        "Salvia",
+        "Rosmarin",
+        "Geranium"
+      ],
+      "base": [
+        "Ambroxan",
+        "Amberträ",
+        "Labdanum"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/16flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/16flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "name": "Langmuir",
+    "title": "Langmuir 17.0",
+    "sku": "17",
+    "product_id": "gid://shopify/Product/8893739630934",
+    "handle": "inspired-by-imagination",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "louis vuitton lv imagination"
+    ],
+    "description": "Denna doft öppnar med en frisk blandning av citron, kalabrisk bergamott och siciliansk apelsin. Hjärtat avslöjar en kryddig och aromatisk mix av tunisiskt neroli, nigeriansk ingefära och kanel från Ceylon. Den avslutas med en rik bas av kinesiskt svart te, ambroxan, guajakträ och olibanum.",
+    "notes": {
+      "top": [
+        "Citron",
+        "Kalabrisk bergamott",
+        "Siciliansk apelsin"
+      ],
+      "middle": [
+        "Tunisiskt neroli",
+        "Nigeriansk ingefära",
+        "Kanel från Ceylon"
+      ],
+      "base": [
+        "Kinesiskt svart te",
+        "Ambroxan",
+        "Guajakträ",
+        "Olibanum"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/17flaska.png?v=1758730747",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/17flaska.png?v=1758730747",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "name": "Ostwald",
+    "title": "Ostwald 18.0",
+    "sku": "18",
+    "product_id": "gid://shopify/Product/8893740908886",
+    "handle": "inspired-by-ombre-nomade",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "ombre nomade louis vuitton lv"
+    ],
+    "description": "Denna doft öppnar med den rika och exotiska aromen av agarträ (oud) och rökelse, ackompanjerad av blommiga noter av ros och sötman från hallon. Hjärtat presenterar en lyxig blandning av saffran, amberträ och benzoin, som ger djup och värme. Den avrundas med en bas av rökig björk och frisk geranium. Inspirerad av LV:s Ombre Nomade är denna doft en resa av prakt och mystik.",
+    "notes": {
+      "top": [
+        "Agarträ (Oud)",
+        "Rökelse",
+        "Ros"
+      ],
+      "middle": [
+        "Amberträ",
+        "Benzoin",
+        "Hallon",
+        "Saffran"
+      ],
+      "base": [
+        "Björk",
+        "Geranium"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/18flaska.png?v=1758730746",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/OstwaldNoter.jpg?v=1767110290",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/18flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/OstwaldNoter.jpg?v=1767110290",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "name": "Pauling",
+    "title": "Pauling 19.0",
+    "sku": "19",
+    "product_id": "gid://shopify/Product/8893741760854",
+    "handle": "inspired-by-pacific-chill",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "pacific chill louis vuitton lv"
+    ],
+    "description": "Denna doft öppnar med uppfriskande noter av citron, apelsin, mynta, svarta vinbär och koriander. Hjärtat kombinerar aprikos, basilika, morotsfrön och majros. Den avslutas med en varm bas av fikon, dadlar och ambrette. Inspirerad av LV:s Pacific Chill framkallar denna doft känslan av en livfull och frisk kustflykt.",
+    "notes": {
+      "top": [
+        "Citron",
+        "Apelsin",
+        "Mynta",
+        "Svarta vinbär",
+        "Koriander"
+      ],
+      "middle": [
+        "Aprikos",
+        "Basilika",
+        "Morotsfrön",
+        "Majros"
+      ],
+      "base": [
+        "Fikon",
+        "Dadlar",
+        "Ambrette"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/19flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/19flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "name": "Servais Stas",
+    "title": "Servais Stas 20.0",
+    "sku": "20",
+    "product_id": "gid://shopify/Product/8893742448982",
+    "handle": "inspired-by-stellar-times-servais-stas-20-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "stellar times louis vuitton lv"
+    ],
+    "description": "Denna doft öppnar med den fina doften av apelsinblomma. Den övergår till ett varmt hjärta av amber och avslutas med rika tränoter. Inspirerad av LV:s Stellar Times förkroppsligar denna doft elegans och tidlöshet.",
+    "notes": {
+      "top": [
+        "Apelsinblomma"
+      ],
+      "middle": [
+        "Amberträ"
+      ],
+      "base": [
+        "Tränoter"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/20flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/20flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "name": "Nobel",
+    "title": "Nobel 21.0",
+    "sku": "21",
+    "product_id": "gid://shopify/Product/8927676858710",
+    "handle": "inspired-by-erba-pura-nobel-21-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "erba pura xerjoff"
+    ],
+    "description": "Detta är en livfull och sensuell doft som utstrålar ren lyx. Den öppnar med en explosion av friska citrusnoter från Siciliansk apelsin och bergamott, som kombineras med sötmandarin för en fruktig och energisk start. Hjärtat är fyllt av en rik blandning av exotiska frukter som ger en söt, tropisk karaktär. Basen avslöjar en mjuk och varm kombination av vit mysk, vanilj och amber, vilket skapar en långvarig och oemotståndlig doft.",
+    "notes": {
+      "top": [
+        "Siciliansk apelsin",
+        "Bergamott",
+        "Sötmandarin"
+      ],
+      "middle": [
+        "Exotiska frukter"
+      ],
+      "base": [
+        "Vit mysk",
+        "Vanilj",
+        "Amber"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/21flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/21flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "name": "Altman",
+    "title": "Altman 22.0",
+    "sku": "22",
+    "product_id": "gid://shopify/Product/8927693603158",
+    "handle": "inspired-by-althair",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "althaïr althair parfums de marly pdm"
+    ],
+    "description": "Denna doft öppnar med en distinkt blandning av kanel, kardemumma och apelsinblomma, kombinerat med bergamott för att skapa en fräsch och kryddig inledning. Hjärtat avslöjar den rika sötman av bourbonvanilj och den exotiska värmen från elemi, vilket ger en förförisk och djup karaktär. Doften avslutas med en krämig bas av pralin, mysk, ambroxan och guajakträ, som erbjuder en rik och lyxig doftupplevelse. Inspirerad av Althair från Parfums de Marly.",
+    "notes": {
+      "top": [
+        "Kanel",
+        "Kardemumma",
+        "Apelsinblomma",
+        "Bergamott"
+      ],
+      "middle": [
+        "Bourbonvanilj",
+        "Elemi"
+      ],
+      "base": [
+        "Pralin",
+        "Mysk",
+        "Ambroxan",
+        "Guaiacträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/22flaska.png?v=1758730745",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/Altman22.0bildermednoter.jpg?v=1767104908",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/22flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/Altman22.0bildermednoter.jpg?v=1767104908",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "name": "Angeli",
+    "title": "Angeli 23.0",
+    "sku": "23",
+    "product_id": "gid://shopify/Product/9152064979286",
+    "handle": "inspired-by-angels-share-angeli-23-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "angels' share by kilian angelsshare angel share"
+    ],
+    "description": "Denna doft öppnar med den rika värmen av cognac. Hjärtat blandar kryddig kanel, tonkaböna, ek och blommig hedion. Den avslutas med en söt bas av vanilj, pralin, sandelträ och kanderad mandel.",
+    "notes": {
+      "top": [
+        "Cognac"
+      ],
+      "middle": [
+        "Kanel",
+        "Tonkaböna",
+        "Ek",
+        "Hedione"
+      ],
+      "base": [
+        "Vanilj",
+        "Pralin",
+        "Sandelträ",
+        "Kanderad Mandel"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/23flaska.png?v=1758730745",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/Angeli23.0Noter_d651dc7f-a48d-49a9-aed2-7a2949e3ad42.jpg?v=1767104156",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/23flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/Angeli23.0Noter_d651dc7f-a48d-49a9-aed2-7a2949e3ad42.jpg?v=1767104156",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "name": "LeBlanc",
+    "title": "LeBlanc 24.0",
+    "sku": "24",
+    "product_id": "gid://shopify/Product/9152093061462",
+    "handle": "inspired-by-layton-leblanc-24-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "layton parfums de marly pdm"
+    ],
+    "description": "Denna doft öppnar med en uppfriskande explosion av äpple och bergamott, mjukad av lugnande lavendel och pigg mandarin. Hjärtat blommar med delikata noter av viol och jasmin, vilket tillför en elegant blommig känsla. Den avrundas med en varm omfamning av vanilj och sandelträ, kryddad med toner av kardemumma och peppar för en långvarig och sensuell djuphet.",
+    "notes": {
+      "top": [
+        "Äpple",
+        "Lavendel",
+        "Bergamott",
+        "Mandarin"
+      ],
+      "middle": [
+        "Geranium",
+        "Viol",
+        "Jasmin"
+      ],
+      "base": [
+        "Vanilj",
+        "Kardemumma",
+        "Sandelträ",
+        "Peppar",
+        "Patchouli",
+        "Guajakträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/24flaska.png?v=1758730745",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/LeblancNoter.jpg?v=1767107813",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/24flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/LeblancNoter.jpg?v=1767107813",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "name": "Northrop",
+    "title": "Northrop 25.0",
+    "sku": "25",
+    "product_id": "gid://shopify/Product/9152112492886",
+    "handle": "inspired-by-neroli-portofino-northrop-25-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "neroli portofino tom ford tf"
+    ],
+    "description": "Denna doft öppnar med en livlig blandning av citrusnoter – bergamott, mandarin, citron och bitterapelsin – upplyst av aromatiska inslag av lavendel, rosmarin och myrten. Hjärtat utvecklas med en rik blombukett av afrikansk apelsinblomma, neroli, jasmin och pitosporum. Basen landar i varma toner av amber, angelica och den mjuka mysknoten från ambrette, vilket lämnar ett elegant och långvarigt spår.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Mandarin",
+        "Citron",
+        "Bitterapelsin",
+        "Lavendel",
+        "Rosmarin",
+        "Myrten"
+      ],
+      "middle": [
+        "Afrikansk apelsinblomma",
+        "Neroli",
+        "Jasmin",
+        "Pitosporum"
+      ],
+      "base": [
+        "Amberträ",
+        "Kvanne",
+        "Ambrette"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/25flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/25flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 26,
+    "name": "Sørensen",
+    "title": "Sørensen 26.0",
+    "sku": "26",
+    "product_id": "gid://shopify/Product/9152118587734",
+    "handle": "inspired-by-side-effect-sorensen-26-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "initio parfums prives side effect"
+    ],
+    "description": "Denna doft öppnar med den djärva rikheten av rom och tobak, förstärkt av värmen från kanel och den exotiska kryddan saffran. Den fördjupas med en mjuk bas av sandelträ, medan hedion tillför en touch av ljus för en perfekt balanserad avslutning.",
+    "notes": {
+      "top": [
+        "Rom",
+        "tobak"
+      ],
+      "middle": [
+        "Kanel",
+        "Saffran"
+      ],
+      "base": [
+        "Sandelträ",
+        "Hedion"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/26flaska.png?v=1758730746",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/SorensenNoter.jpg?v=1767108863",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/26flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/SorensenNoter.jpg?v=1767108863",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 27,
+    "name": "Goldhaber",
+    "title": "Goldhaber 27.0",
+    "sku": "27",
+    "product_id": "gid://shopify/Product/9152125665622",
+    "handle": "inspired-by-god-of-fire-goldhaber-27-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "god of fire stéphane humbert lucas 777"
+    ],
+    "description": "Denna doft öppnar med tropisk sötma från mango, kryddad med ingefära och uppfriskad av syrlig citron och röda bär. Hjärtat bjuder på en mjuk blandning av kumarin, jasmin och cederträ som tillför djup och elegans. Basen avslutas med en rik, sensuell kombination av mysk, amber, oud och den jordiga värmen från cypriololja.",
+    "notes": {
+      "top": [
+        "Mango",
+        "Ginger",
+        "Lemon",
+        "Röda bär"
+      ],
+      "middle": [
+        "Kumarin",
+        "Jasmin",
+        "Ceder"
+      ],
+      "base": [
+        "Mysk",
+        "Amberträ",
+        "Oud",
+        "Cypriololja"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/27flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/27flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 28,
+    "name": "Bellini",
+    "title": "Bellini 28.0",
+    "sku": "28",
+    "product_id": "gid://shopify/Product/9152133464406",
+    "handle": "inspired-by-bianco-latte-bellini-28-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "bianco latte giardini di toscana"
+    ],
+    "description": "Denna doft öppnar med en ljuvlig not av karamell, som skapar en söt och lyxig inledning. Hjärtat blandar kumarins värme med den rika sötman från honung. Den avslutas med en mjuk bas av krämig vanilj och mjuk vit mysk, vilket lämnar ett delikat och behagligt spår.",
+    "notes": {
+      "top": [
+        "Karamell"
+      ],
+      "middle": [
+        "Kumarin",
+        "Honung"
+      ],
+      "base": [
+        "Vanilj",
+        "Vit Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/28flaska.png?v=1758730745",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/BelliniNoter.jpg?v=1767109874",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/28flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/BelliniNoter.jpg?v=1767109874",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 29,
+    "name": "Macquer",
+    "title": "Macquer 29.0",
+    "sku": "29",
+    "product_id": "gid://shopify/Product/9152138248534",
+    "handle": "inspired-by-oud-maracuja-macquer-29-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "oud maracujá maison crivelli oud maracuja"
+    ],
+    "description": "Denna doft öppnar med den exotiska sötman från passionsfrukt, fruktiga noter och elegansen från turkisk ros, förstärkt av en antydan av saffran. Hjärtat avslöjar en djup blandning av oud, indonesisk patchouliblad och bensoin, som ger en rik, hartsartad värme. Den avslutas med en djärv bas av läder, Akigalaträ, amber, labdanum och en touch av krämig vanilj för ett lyxigt och långvarigt intryck.",
+    "notes": {
+      "top": [
+        "Passionsfrukt",
+        "Fruktnoter",
+        "Turkisk Ros",
+        "Saffran"
+      ],
+      "middle": [
+        "Agarträ (Oud)",
+        "Indonesisk Patchouliblad",
+        "Bensoin"
+      ],
+      "base": [
+        "Läder",
+        "Akigalaträ",
+        "Bärnsten",
+        "Labdanum",
+        "Vanilj"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/29flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/29flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 30,
+    "name": "LeMieux",
+    "title": "LeMieux 30.0",
+    "sku": "30",
+    "product_id": "gid://shopify/Product/9152142016854",
+    "handle": "inspired-by-le-male-elixir-le-mieux-30-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "le male elixir jean paul gaultier jpg"
+    ],
+    "description": "Denna doft öppnar med en uppfriskande blandning av lavendel och mynta, som ger en sval och aromatisk inledning. Hjärtat värms upp av en söt mix av vanilj och bensoin, vilket skapar en mjuk övergång. Den avslutas med en rik bas av honung, tonkaböna och tobak, som lämnar ett behagligt och lyxigt spår.",
+    "notes": {
+      "top": [
+        "Lavendel",
+        "Mynta"
+      ],
+      "middle": [
+        "Vanilj",
+        "Bensoin"
+      ],
+      "base": [
+        "Honung",
+        "Tonkaböna",
+        "Tobak"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/30flaska.png?v=1758730746",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/LemieuxNoter.jpg?v=1767110713",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/30flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/LemieuxNoter.jpg?v=1767110713",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 31,
+    "name": "Zefirov",
+    "title": "Zefirov 31.0",
+    "sku": "31",
+    "product_id": "gid://shopify/Product/9152147030358",
+    "handle": "inspired-by-ultramale-zefirov-31-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "ultra male jean paul gaultier jpg"
+    ],
+    "description": "Denna doft öppnar med en fräsch och livlig blandning av päron, lavendel, mint, bergamott och citron som skapar en energisk och uppfriskande start. Hjärtat introducerar en varm och kryddig mix av kanel, muskatellsalvia och kummin som tillför djup och komplexitet. Basen avslutas med rika toner av svart vaniljskida, amber, patchouli och ceder som lämnar ett djärvt och långvarigt intryck.",
+    "notes": {
+      "top": [
+        "Päron",
+        "Lavendel",
+        "Mint",
+        "Bergamott",
+        "Citron"
+      ],
+      "middle": [
+        "Kanel",
+        "Muskatellsalvia",
+        "Kummin"
+      ],
+      "base": [
+        "Svart Vaniljskida",
+        "Amber",
+        "Patchouli",
+        "Ceder"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/31flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/31flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 34,
+    "name": "Campbell",
+    "title": "Campbell 34.0",
+    "sku": "34",
+    "product_id": "gid://shopify/Product/9152154894678",
+    "handle": "inspired-by-carlisle-campbell-34-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "carlisle parfums de marly pdm"
+    ],
+    "description": "Denna doft öppnar med en kryddig blandning av muskot, grönt äpple och saffran, vilket skapar en livlig och fängslande inledning. Hjärtat berikas med tonkaböna, ros, osmanthus och davana, som ger en varm och blommig komplexitet. Den avslutas med en mjuk bas av patchouli, vanilj och opoponax, vilket lämnar ett rikt och fängslande spår.",
+    "notes": {
+      "top": [
+        "Muskot",
+        "Grönt Äpple",
+        "Saffran"
+      ],
+      "middle": [
+        "Tonkaböna",
+        "Ros",
+        "Osmanthus",
+        "Davana"
+      ],
+      "base": [
+        "Patchouli",
+        "Vanilj",
+        "Opoponax"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/34flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/34flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 35,
+    "name": "Staudinger",
+    "title": "Staudinger 35.0",
+    "sku": "35",
+    "product_id": "gid://shopify/Product/9185540079958",
+    "handle": "inspired-by-sauvage-elixir-staudinger-35-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "sauvage elixir dior cologne"
+    ],
+    "description": "Denna doft öppnar med en varm och kryddig blandning av muskot, kanel och kardemumma, balanserad med en fräsch touch av grapefrukt. I hjärtat tillför lugnande lavendel en elegant harmoni. Doften landar i en djup och rik bas av lakrits, sandelträ, amber, patchouli och haitisk vetiver.",
+    "notes": {
+      "top": [
+        "Muskot",
+        "Kanel",
+        "Kardemumma",
+        "Grapefrukt"
+      ],
+      "middle": [
+        "Lavendel"
+      ],
+      "base": [
+        "Lakrits",
+        "Sandelträ",
+        "Amber",
+        "Patchouli",
+        "Haitisk Vetiver"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/35flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/35flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 36,
+    "name": "Burbank",
+    "title": "Burbank 36.0",
+    "sku": "36",
+    "product_id": "gid://shopify/Product/9185542308182",
+    "handle": "inspired-by-bal-d-afrique-burbank-36-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "byredo bal d' afrique bal d afrique"
+    ],
+    "description": "Denna doft öppnar med en frisk mix av Amalfi-citron, tagetes, svart vinbär och bergamott. Hjärtat avslöjar blommiga toner av viol, cyklamen och jasmin, medan basen erbjuder en jordnära blandning av vetiver, mysk, amber och Virginisk ceder.",
+    "notes": {
+      "top": [
+        "Amalficitron",
+        "Tagetes",
+        "Svarta Vinbär",
+        "Bergamott",
+        "Afrikansk Apelsinblomma"
+      ],
+      "middle": [
+        "Viol",
+        "Cyklamen",
+        "Jasmin"
+      ],
+      "base": [
+        "Vetiver",
+        "Mysk",
+        "Amber",
+        "Virginiaceder"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/36flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/36flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 37,
+    "name": "Sharpless",
+    "title": "Sharpless 37.0",
+    "sku": "37",
+    "product_id": "gid://shopify/Product/9185544044886",
+    "handle": "inspired-by-black-saffron-sharpless-37-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "byredo black saffron"
+    ],
+    "description": "Denna doft öppnar med en exotisk kryddighet från saffran, friska enbär och en livlig touch av kinesisk grapefrukt. I hjärtat möts kraftfullt läder och mörka toner av svart viol. Basen bjuder på en oväntad sötma från hallon, omsluten av mjuk cashmeran och jordig vetiver.",
+    "notes": {
+      "top": [
+        "Saffran",
+        "Enbär",
+        "Kinesisk Grapefrukt"
+      ],
+      "middle": [
+        "Läder",
+        "Svart Viol"
+      ],
+      "base": [
+        "Hallon",
+        "Cashmeran",
+        "Vetiver"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/37flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/37flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 38,
+    "name": "McMillan",
+    "title": "McMillan 38.0",
+    "sku": "38",
+    "product_id": "gid://shopify/Product/9185545978198",
+    "handle": "inspired-by-mojave-ghost-mcmillan-38-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "byredo mojave ghost"
+    ],
+    "description": "Denna doft börjar med den mjuka, fruktiga sötman från sapodilla kombinerad med den myska värmen från ambrette. I hjärtat tillför magnolia, viol och sandelträ en delikat och balanserad blomstrande ton. Basen landar i de omfamnande och jordande noterna av ambra, cederträ och mysk, vilket skapar en långvarig och raffinerad avslutning.",
+    "notes": {
+      "top": [
+        "Sapodilla",
+        "Ambrette (Myskmalva)"
+      ],
+      "middle": [
+        "Magnolia",
+        "Viol",
+        "Sandelträ"
+      ],
+      "base": [
+        "Ambra",
+        "Ceder",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/38flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/38flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 39,
+    "name": "Sumner",
+    "title": "Sumner 39.0",
+    "sku": "39",
+    "product_id": "gid://shopify/Product/9185557184854",
+    "handle": "inspired-by-sundazed-summer-39-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "byredo sundazed"
+    ],
+    "description": "Denna doft öppnar med livliga och syrliga toner av mandarin och kalifornisk citron, som framkallar en solig citruskänsla. Hjärtat blommar med den söta blomtonen av neroli och jasmin sambac, vilket tillför en elegant touch. Basen landar i en mjuk och lekfull mix av sockervadd och vit mysk, som skapar en varm och omfamnande avslutning.",
+    "notes": {
+      "top": [
+        "Mandarinapelsin",
+        "Kalifornisk Citron"
+      ],
+      "middle": [
+        "Neroli",
+        "Jasmin Sambac"
+      ],
+      "base": [
+        "Sockervadd",
+        "Vit Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/39flaska.png?v=1758730747",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/39flaska.png?v=1758730747",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 40,
+    "name": "Thénard",
+    "title": "Thénard 40.0",
+    "sku": "40",
+    "product_id": "gid://shopify/Product/9185558954326",
+    "handle": "inspired-by-tobacco-mandarin-thenard-40-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "byredo tobacco mandarin"
+    ],
+    "description": "Denna doft öppnar med en kryddig värme från kummin, livlig mandarin och aromatisk koriander. I hjärtat finns rökiga inslag av tobak, robust läder och djup labdanum. Basen avslöjar en rik, mystisk blandning av olibanum, oud och krämigt sandelträ.",
+    "notes": {
+      "top": [
+        "Kummin",
+        "Mandarin",
+        "Koriander"
+      ],
+      "middle": [
+        "Tobak",
+        "Läder",
+        "Labdanum"
+      ],
+      "base": [
+        "Olibanum",
+        "Agarträ (Oud)",
+        "Sandelträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/41flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/41flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 41,
+    "name": "Thompson",
+    "title": "Thompson 41.0",
+    "sku": "41",
+    "product_id": "gid://shopify/Product/9185560887638",
+    "handle": "inspired-by-tf-tobacco-vanille-thompson-41-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "tf tom ford tobacco vanille"
+    ],
+    "description": "Denna doft öppnar med fylliga toner av tobaksblad och kryddiga inslag. I hjärtat smälter söt vanilj, rik kakao, tonkaböna och tobaksblomma samman i en varm och inbjudande mix. Basen bjuder på en djup och sensuell kombination av torkade frukter och träiga noter.",
+    "notes": {
+      "top": [
+        "Tobaksblad",
+        "Kryddiga Noter"
+      ],
+      "middle": [
+        "Vanilj",
+        "Kakao",
+        "Tonkaböna",
+        "Tobaksblomma"
+      ],
+      "base": [
+        "Torkade Frukter",
+        "Träiga Noter"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/41nyflaska.png?v=1758747795",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/ThompsonNoter.jpg?v=1767108536",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/41nyflaska.png?v=1758747795",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/ThompsonNoter.jpg?v=1767108536",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 42,
+    "name": "Norrish",
+    "title": "Norrish 42.0",
+    "sku": "42",
+    "product_id": "gid://shopify/Product/9185563312470",
+    "handle": "inspired-by-tf-noir-extreme-parfum-norrish-42-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "tf tom ford noir extreme parfum"
+    ],
+    "description": "Denna doft öppnar med en livlig och kryddig blandning av kardemumma, ingefära och mandarinapelsin, mjukad av neroli och andra citrusnoter. I hjärtat framhävs den exotiska sötman från kulfi av blomtoner från bulgarisk ros, apelsinblomma och jasmin. Basen landar i en rik och lyxig mix av vanilj, läder, mocka, amber och träslag, vilket skapar en djärv och maskulin avslutning.",
+    "notes": {
+      "top": [
+        "Kardemumma",
+        "Ingefära",
+        "Mandarinapelsin",
+        "Neroli",
+        "Citrusfrukter"
+      ],
+      "middle": [
+        "Kulfi",
+        "Bulgarisk Ros",
+        "Apelsinblomma",
+        "Jasmin"
+      ],
+      "base": [
+        "Vanilj",
+        "Läder",
+        "Mocka",
+        "Amber",
+        "Tonkaböna",
+        "Guajakträ",
+        "Ceder"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/42flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/42flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 43,
+    "name": "Overman",
+    "title": "Overman 43.0",
+    "sku": "43",
+    "product_id": "gid://shopify/Product/9185567310166",
+    "handle": "inspired-by-tf-ombre-leather-overman-43-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "tom ford ombré leather (2018) tf ombre leather"
+    ],
+    "description": "Denna doft öppnar med en kryddig och aromatisk ton av kardemumma. I hjärtat möts elegant läder och fyllig jasmin sambac. Basen avslöjar en djup och jordnära kombination av amber, mossa och patchouli.",
+    "notes": {
+      "top": [
+        "Kardemumma"
+      ],
+      "middle": [
+        "Läder",
+        "Jasmin Sambac"
+      ],
+      "base": [
+        "Amberträ",
+        "Mossa",
+        "Patchouli"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/43flaska.png?v=1758730744",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/43flaska.png?v=1758730744",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 44,
+    "name": "Sobrero",
+    "title": "Sobrero 44.0",
+    "sku": "44",
+    "product_id": "gid://shopify/Product/9185568915798",
+    "handle": "inspired-by-tf-soleil-neige-sobrero-44-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "soleil neige parfum tom ford tf"
+    ],
+    "description": "Denna doft öppnar med en frisk kombination av bergamott och de unika, jordiga tonerna från morotsfrön. I hjärtat blommar en bukett av vita blommor, apelsinblomma, jasmin och både ros och turkisk ros. Basen är varm och förförisk med sötma från benzoin och vanilj, samt en djup, resinös touch av labdanum.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Morotsfrön"
+      ],
+      "middle": [
+        "Vita Blommor",
+        "Apelsinblomma",
+        "Jasmin",
+        "Ros",
+        "Turkisk Ros"
+      ],
+      "base": [
+        "Bensoin",
+        "Vanilj",
+        "Labdanum"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/44flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/44flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 45,
+    "name": "Smalley",
+    "title": "Smalley 45.0",
+    "sku": "45",
+    "product_id": "gid://shopify/Product/9185678164310",
+    "handle": "inspired-by-tf-soleil-blanc-smalley-45-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "soleil blanc tom ford tf"
+    ],
+    "description": "Denna doft öppnar med en krämig och kryddig kombination av pistage, frisk bergamott, kardemumma och rosa peppar. I hjärtat blommar en exotisk trio av tuberos, ylang-ylang och jasmin. Basen avslöjar en varm och sensuell blandning av kokos, amber, tonkaböna och benzoin, som ger ett mjukt och fylligt avslut.",
+    "notes": {
+      "top": [
+        "Pistage",
+        "Bergamott",
+        "Kardemumma",
+        "Rosa Peppar"
+      ],
+      "middle": [
+        "Tuberose",
+        "Ylang-Ylang",
+        "Jasmin"
+      ],
+      "base": [
+        "Kokos",
+        "Amber",
+        "Tonkaböna",
+        "Bensoin"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/45flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/45flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 46,
+    "name": "François",
+    "title": "François 46.0",
+    "sku": "46",
+    "product_id": "gid://shopify/Product/9185573962070",
+    "handle": "inspired-by-tf-f-faboulous-francois-46-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "fucking fabulous tom ford tf f fabulous"
+    ],
+    "description": "Denna doft öppnar med en aromatisk mix av lavendel och kryddig salvia. I hjärtat möts rikligt läder med bittermandel, söt vanilj och den pudriga elegansen av orris. Basen bjuder på en varm och sensuell blandning av läder, tonkaböna, mjuk cashmeran, vita träslag och amber, vilket ger en sofistikerad och varaktig avslutning.",
+    "notes": {
+      "top": [
+        "Lavendel",
+        "Muskatellsalvia"
+      ],
+      "middle": [
+        "Läder",
+        "Bittermandel",
+        "Vanilj",
+        "Orris"
+      ],
+      "base": [
+        "Läder",
+        "Tonkaböna",
+        "Cashmeran",
+        "Vitt Trä",
+        "Amb"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/46flaska.png?v=1758730747",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/46flaska.png?v=1758730747",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 47,
+    "name": "Olmstead",
+    "title": "Olmstead 47.0",
+    "sku": "47",
+    "product_id": "gid://shopify/Product/9152161579350",
+    "handle": "inspired-by-oud-satin-mood-olmstead-47-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "oud satin mood maison francis kurkdjian"
+    ],
+    "description": "Denna doft öppnar med en romantisk blandning av bulgarisk ros, viol och söt jordgubbe, som skapar en mjuk och förförisk inledning. Hjärtat kretsar kring elegansen hos turkisk ros, vilket tillför djup och sofistikering. Basen avslutas med en rik kombination av oud, vanilj, bensoin, amber, karamell och ceder, som lämnar ett varmt och lyxigt spår.",
+    "notes": {
+      "top": [
+        "Bulgarisk ros",
+        "Viol",
+        "Jordgubbe"
+      ],
+      "middle": [
+        "Turkisk ros"
+      ],
+      "base": [
+        "Oud",
+        "Vanilj",
+        "Bensoin",
+        "Amber",
+        "Karamell",
+        "Ceder"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/47flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/47flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 78,
+    "name": "Sherman",
+    "title": "Sherman 78.0",
+    "sku": "78",
+    "product_id": "gid://shopify/Product/9185575960918",
+    "handle": "inspired-by-kilian-smokin-hot-sherman-78-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "smoking hot by kilian"
+    ],
+    "description": "Denna doft öppnar med en varm och kryddig blandning av äpple, kanel och rökiga inslag. I hjärtat finner du rökig tobak, söt vanilj och jordig mossa. Basen är en komplex och djup kombination av bourbonvanilj, Orcanox™, lakrits, Iso E Super och aromatisk salvia, som tillsammans skapar ett sofistikerat och långvarigt avslut.",
+    "notes": {
+      "top": [
+        "Äpple",
+        "Kanel",
+        "Rök"
+      ],
+      "middle": [
+        "Tobak",
+        "Vanilj",
+        "Mossa"
+      ],
+      "base": [
+        "Bourbonvanilj",
+        "Orcanox™",
+        "Lakrits",
+        "Iso E Super",
+        "Muskatellsalvia"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/78flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/78flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 79,
+    "name": "Lozanić",
+    "title": "Lozanić 79.0",
+    "sku": "79",
+    "product_id": "gid://shopify/Product/9185577206102",
+    "handle": "inspired-by-tf-lost-cherry-lozanic-79-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "lost cherry tom ford tf"
+    ],
+    "description": "Denna doft öppnar med en fyllig och intensiv blandning av bittermandel, svart körsbär och körsbärslikör. I hjärtat möts syrlig körsbär, saftigt plommon, turkisk ros och jasmin sambac i en djup och förförisk blom- och fruktkomposition. Basen bjuder på en varm och komplex symfoni av vanilj, tonkaböna, kanel, Peru-balsam, benzoin, sandelträ, kryddnejlika, cederträ, patchouli och vetiver, vilket ger ett rikt och långvarigt avslut.",
+    "notes": {
+      "top": [
+        "Bittermandel",
+        "Svarta Körsbär",
+        "Körsbärslikör"
+      ],
+      "middle": [
+        "Surkörsbär",
+        "Plommon",
+        "Turkisk Ros",
+        "Jasmin Sambac"
+      ],
+      "base": [
+        "Vanilj",
+        "Tonkaböna",
+        "Kanel",
+        "Peru Balsam",
+        "Bensoin",
+        "Sandelträ",
+        "Kryddnejlika",
+        "Ceder",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/79flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/79flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 80,
+    "name": "Arduengo",
+    "title": "Arduengo 80.0",
+    "sku": "80",
+    "product_id": "gid://shopify/Product/9185580319062",
+    "handle": "inspired-by-atomic-rose-arduengo-80-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "atomic rose initio parfums prives"
+    ],
+    "description": "Denna doft öppnar med en frisk och kryddig kombination av rosa peppar och bergamott. I hjärtat blommar en elegant mix av bulgarisk ros, turkisk ros och egyptisk jasmin. Basen är varm och sensuell med mjuk madagaskisk vanilj och fyllig amber, vilket ger ett sofistikerat och förföriskt avslut.",
+    "notes": {
+      "top": [
+        "Rosépeppar",
+        "Bergamott"
+      ],
+      "middle": [
+        "Bulgarisk Ros",
+        "Turkisk Ros",
+        "Egyptisk Jasmin"
+      ],
+      "base": [
+        "Madagaskarvanilj",
+        "Amber"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/80flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/80flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 81,
+    "name": "Boerhaave",
+    "title": "Boerhaave 81.0",
+    "sku": "81",
+    "product_id": "gid://shopify/Product/9185582186838",
+    "handle": "inspired-by-blessed-baraka-boerhaave-81-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "blessed baraka initio parfums prives"
+    ],
+    "description": "Denna doft öppnar med en blommig ton av vita blommor och övergår till ett hjärta av krämigt sandelträ och söt vanilj. Basen består av varm amber och mysk som ger en rik och kraftfull doft med en mjuk avslutning.Denna doft öppnar med en blommig ton av vita blommor och övergår till ett hjärta av krämigt sandelträ och söt vanilj. Basen består av varm amber och mysk som ger en rik och kraftfull doft med en mjuk avslutning.",
+    "notes": {
+      "top": [
+        "Vita Blommor"
+      ],
+      "middle": [
+        "Sandelträ",
+        "Vanilj"
+      ],
+      "base": [
+        "Amber",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/81flaska.png?v=1758730744",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/81flaska.png?v=1758730744",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 82,
+    "name": "Herzberg",
+    "title": "Herzberg 82.0",
+    "sku": "82",
+    "product_id": "gid://shopify/Product/9185584513366",
+    "handle": "inspired-by-high-frequency-herzberg-82-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "high frequency initio parfums prives"
+    ],
+    "description": "Doften är en hypnotisk kombination av blommiga och myskiga toner, med mandelns mjuka värme som smälter samman med jasminens elegans. Basen är strålande och fyllig, vilket ger ett långvarigt och sofistikerat intryck.",
+    "notes": {
+      "top": [
+        "Vit Mysk",
+        "Mandel"
+      ],
+      "middle": [
+        "Jasmin"
+      ],
+      "base": [
+        "Hedion"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/82flaska.png?v=1758730747",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/82flaska.png?v=1758730747",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 83,
+    "name": "Fermi",
+    "title": "Fermi 83.0",
+    "sku": "83",
+    "product_id": "gid://shopify/Product/9185589297494",
+    "handle": "inspired-by-oud-for-greatness-fermi-83-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "oud for greatness initio parfums prives"
+    ],
+    "description": "Denna doft öppnar med en varm och kryddig blandning av saffran, muskot och fräsch lavendel. I hjärtat dominerar den djupa och rika doften av oud, vilket tillför komplexitet och djup. Basen av patchouli och mysk ger en jordnära och lyxig avslutning.",
+    "notes": {
+      "top": [
+        "Saffran",
+        "Muskot",
+        "Lavendel"
+      ],
+      "middle": [
+        "Oud"
+      ],
+      "base": [
+        "Patchouli",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/83flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/83flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 88,
+    "name": "Faraday",
+    "title": "Faraday 88.0",
+    "sku": "88",
+    "product_id": "gid://shopify/Product/9312767213910",
+    "handle": "faraday-88-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "the blazing mr sam penhaligon's"
+    ],
+    "description": "Denna doft öppnar med en kraftfull och kryddig blandning av kardemumma och kanel, med ett hint av grapefruktens friskhet. I hjärtat finner du värmande noter av svartpeppar och spiskummin, som balanseras av den mjuka elegansen hos patchouli. Basen är en rik och sofistikerad kombination av cederträ, vanilj och sensuell mysk, vilket skapar ett djärvt och långvarigt avslut.",
+    "notes": {
+      "top": [
+        "Kardemumma",
+        "Kanel",
+        "Grapefrukt"
+      ],
+      "middle": [
+        "Svartpeppar",
+        "Spiskummin",
+        "Patchouli"
+      ],
+      "base": [
+        "Cederträ",
+        "Vanilj",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/88flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/88flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 98,
+    "name": "Noiraud",
+    "title": "Noiraud 98.0",
+    "sku": "98",
+    "product_id": "gid://shopify/Product/9312773013846",
+    "handle": "noiraud-98-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "noir extreme tom ford tf"
+    ],
+    "description": "Denna doft öppnar med en fyllig och kryddig blandning av kardemumma, saffran och muskot, balanserad av en frisk touch av mandarin och neroli. I hjärtat möts du av den rika och krämiga sötman från kulfi, omgiven av jasmin, ros och apelsinblomma. Basen är en sensuell och djup kombination av sandelträ, vanilj, bärnsten och träiga noter som skapar en oemotståndligt elegant avslutning.",
+    "notes": {
+      "top": [
+        "Kardemumma",
+        "Saffran",
+        "Muskot",
+        "Mandarin",
+        "Neroli"
+      ],
+      "middle": [
+        "Kulfi",
+        "Jasmin",
+        "Ros",
+        "Apelsinblomma"
+      ],
+      "base": [
+        "Sandelträ",
+        "Vanilj",
+        "Amber",
+        "Tränoter"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/98flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/98flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 99,
+    "name": "Ørsted",
+    "title": "Ørsted 99.0",
+    "sku": "99",
+    "product_id": "gid://shopify/Product/9312779993430",
+    "handle": "orsted-99-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "oud wood parfum tom ford tf"
+    ],
+    "description": "Denna doft öppnar med en varm och kryddig blandning av rosépeppar, kardemumma och frisk bergamott. I hjärtat möts du av det rika och träiga djupet från oud och sandelträ, som förfinas av elegant vetiver. Basen är en sofistikerad kombination av tonkaböna, vanilj och bärnsten som skapar ett sensuellt och långvarigt avslut.",
+    "notes": {
+      "top": [
+        "Rosépeppar",
+        "Kardemumma",
+        "Bergamott"
+      ],
+      "middle": [
+        "Oud",
+        "Sandelträ",
+        "Vetiver"
+      ],
+      "base": [
+        "Tonkaböna",
+        "Vanilj",
+        "Amber"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/99flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/99flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 100,
+    "name": "Paragon",
+    "title": "Paragon 100.0",
+    "sku": "100",
+    "product_id": "gid://shopify/Product/9312795427158",
+    "handle": "paragon-100-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "perseus parfums de marly pdm"
+    ],
+    "description": "Denna doft öppnar med en fräsch och aromatisk blandning av bergamott, mandarin och vattenackord, vilket ger en uppfriskande och livlig start. I hjärtat kombineras violblad och geranium med lavendel för att skapa en blommig och elegant karaktär. Basen landar i en kraftfull och sofistikerad kombination av ambroxan, mysk och amber, som lämnar ett långvarigt och maskulint intryck.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Mandarin",
+        "Vattenackord"
+      ],
+      "middle": [
+        "Violblad",
+        "Geranium",
+        "Lavendel"
+      ],
+      "base": [
+        "Ambroxan",
+        "Mysk",
+        "Amber"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/100flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/100flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 101,
+    "name": "Bachmann",
+    "title": "Bachmann 101.0",
+    "sku": "101",
+    "product_id": "gid://shopify/Product/10125026066774",
+    "handle": "eclant-149-0-kopia",
+    "status": "ACTIVE",
+    "inspired_by_tags": [],
+    "description": "Denna doft öppnar med en värmande och aromatisk blandning av bitter apelsin, rom, ingefära och rosépeppar, vilket skapar en inbjudande och komplex inledning. I hjärtat framträder en rik kombination av vit tobak, tuberose och torkad frukt som tillför ett dekadent och blommigt djup. Basen avrundas med en mjuk och hartsartad mix av tonkaböna, vetiver, myrra och patchouli, vilket lämnar ett långvarigt och förföriskt avslut.",
+    "notes": {
+      "top": [
+        "Bitter apelsin",
+        "Ingefära",
+        "Rom",
+        "Rosépeppar"
+      ],
+      "middle": [
+        "Vit tobak",
+        "Tuberose",
+        "Torkad frukt",
+        "Saffran"
+      ],
+      "base": [
+        "Tonkaböna",
+        "Vetiver",
+        "Myrra",
+        "Patchouli"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/BACHMANN101.jpg?v=1768384355",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/BACHMANN101.jpg?v=1768384355",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 102,
+    "name": "Gerhardt",
+    "title": "Gerhardt 102.0",
+    "sku": "102",
+    "product_id": "gid://shopify/Product/10125034127702",
+    "handle": "gerhardt-102-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [],
+    "description": "Denna doft öppnar med en värmande och hartsartad blandning av spanskt cistus labdanum, vilket skapar en inbjudande och mystisk inledning. I hjärtat framträder en rik kombination av siamesisk bensoin som tillför en kådig sötma och mjukhet. Basen avrundas med en sensuell och fyllig mix av brasiliansk tonkaböna, vanilj och amber, vilket lämnar ett strålande och elegant avslut.",
+    "notes": {
+      "top": [
+        "Cistus Labdanum"
+      ],
+      "middle": [
+        "Bensoin (Siam)"
+      ],
+      "base": [
+        "Tonkaböna",
+        "Vanilj",
+        "Amber"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/GERHARDT102.jpg?v=1768384984",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/GERHARDT102.jpg?v=1768384984",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 103,
+    "name": "Nuzzo",
+    "title": "Nuzzo 103.0",
+    "sku": "103",
+    "product_id": "gid://shopify/Product/10125037240662",
+    "handle": "gerhardt-103-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [],
+    "description": "Denna doft öppnar med en frisk och aromatisk blandning av bergamott, citron och lavendel, vilket skapar en strålande och medelhavsinspirerad inledning. I hjärtat framträder en rik och söt kombination av honung, kanel, kashmirträ och jasmin sambac som tillför en lyxig värme. Basen avrundas med en sofistikerad och fyllig mix av tobaksblad, tonkaböna och vanilj, vilket lämnar ett sensuellt och långvarigt avslut.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Citron",
+        "Lavendel"
+      ],
+      "middle": [
+        "Honung",
+        "Kanel",
+        "Kashmirträ",
+        "Jasmin Sambac"
+      ],
+      "base": [
+        "Tobaksblad",
+        "Tonkaböna"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/NUZZO1031.jpg?v=1768385274",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/NUZZO1031.jpg?v=1768385274",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 104,
+    "name": "Svedberg",
+    "title": "Svedberg 104.0",
+    "sku": "104",
+    "product_id": "gid://shopify/Product/10125039436118",
+    "handle": "svedberg-104-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [],
+    "description": "Denna doft öppnar med en strålande och energisk blandning av grapefrukt och bergamott, vilket skapar en omedelbart uppfriskande och solig inledning. I hjärtat framträder en kryddig och distinkt kombination av färsk ingefära som tillför en modern hetta och elegans. Basen avrundas med en mjuk och omslutande mix av mysk och fruktiga accorder, vilket lämnar ett långvarigt och sofistikerat avslut som dröjer sig kvar.",
+    "notes": {
+      "top": [
+        "Grapefrukt",
+        "Bergamott"
+      ],
+      "middle": [
+        "Ingefära"
+      ],
+      "base": [
+        "Mysk",
+        "Fruktiga noter"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/SVEDBERG.jpg?v=1768385389",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/SVEDBERG.jpg?v=1768385389",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 107,
+    "name": "Turner",
+    "title": "Turner 107.0",
+    "sku": "107",
+    "product_id": "gid://shopify/Product/9312797950294",
+    "handle": "turner-107-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "torino21 xerjoff"
+    ],
+    "description": "Denna doft öppnar med en frisk och livlig blandning av mynta, basilika och citron, som genast förmedlar en energisk och uppfriskande känsla. I hjärtat finns en sofistikerad kombination av svartvinbär, eukalyptus och jasmin, vilket tillför elegans och djup. Basen avrundas med en varm och jordig blandning av vetiver, mysk och amber, som lämnar ett varaktigt och balanserat avslut.",
+    "notes": {
+      "top": [
+        "Mynta",
+        "Basilika",
+        "Citron"
+      ],
+      "middle": [
+        "Svartvinbär",
+        "Eukalyptus",
+        "Jasmin"
+      ],
+      "base": [
+        "Vetiver",
+        "Mysk",
+        "Amber"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/107flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/107flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 108,
+    "name": "Becquerel",
+    "title": "Becquerel 108.0",
+    "sku": "108",
+    "product_id": "gid://shopify/Product/11149728383318",
+    "handle": "becquerel-108-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "bleu de chanel l'exclusif chanel bdc extrait"
+    ],
+    "description": "Denna doft öppnar mörkt och elegant med ambra och täta träiga noter, vilket skapar en intensiv och sofistikerad inledning. I hjärtat framträder hartsartat labdanum som ger doften djup och värme. Basen avrundas med krämigt sandelträ, vilket lämnar ett rikt och långvarigt ambraträigt avslut.",
+    "notes": null,
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/becquerel-108-flaska.jpg?v=1785698382",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/becquerel-108-flaska.jpg?v=1785698382",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 109,
+    "name": "Zosimos",
+    "title": "Zosimos 109.0",
+    "sku": "109",
+    "product_id": "gid://shopify/Product/11149728547158",
+    "handle": "zosimos-109-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "ex nihilo blue talisman"
+    ],
+    "description": "Denna doft öppnar med en saftig och strålande blandning av päron, bergamott, mandarin och ingefära, vilket skapar en fräsch och solig inledning. I hjärtat framträder apelsinblom tillsammans med en mjuk träighet som ger doften elegans och fyllighet. Basen avrundas med mysk, ambra, akigalawood och cederträ, vilket lämnar ett varmt och sensuellt avslut.",
+    "notes": {
+      "top": [
+        "Päron",
+        "Bergamott",
+        "Mandarin",
+        "Ingefära"
+      ],
+      "middle": [
+        "Apelsinblom",
+        "Cederträ"
+      ],
+      "base": [
+        "Mysk",
+        "Ambra",
+        "Akigalawood",
+        "Cederträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/zosimos-109-flaska.jpg?v=1785698397",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/zosimos-109-flaska.jpg?v=1785698397",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  },
+  {
+    "number": 112,
+    "name": "Leveaux",
+    "title": "Leveaux 112.0",
+    "sku": "112",
+    "product_id": "gid://shopify/Product/9312800473430",
+    "handle": "leveaux-112-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "y eau de parfum intense yves saint laurent ysl y"
+    ],
+    "description": "Denna doft öppnar med en intensiv och fräsch blandning av bergamott, ingefära och elemi, vilket skapar en kraftfull och energisk inledning. I hjärtat balanseras de aromatiska tonerna av salvia och lavendel med en subtil touch av geranium. Basen avrundas med en djup och varm kombination av cederträ, vetiver och patchouli, vilket ger ett sofistikerat och långvarigt avslut.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Ingefära",
+        "Elemi"
+      ],
+      "middle": [
+        "Salvia",
+        "Lavendel",
+        "Geranium"
+      ],
+      "base": [
+        "Cederträ",
+        "Vetiver",
+        "Patchouli"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/112flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/112flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 114,
+    "name": "Valjean",
+    "title": "Valjean 114.0",
+    "sku": "114",
+    "product_id": "gid://shopify/Product/9312805454166",
+    "handle": "valjean-114-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "vodka on the rocks by kilian"
+    ],
+    "description": "Denna doft öppnar med en iskall och fräsch blandning av koriander, kardemumma och aldehyder som ger en känsla av kyla och renhet. I hjärtat finns en sofistikerad kombination av rabarber, ros och liljekonvalj som tillför elegans och balans. Basen avrundas med en mjuk och sensuell mix av ambroxan, ekmossa och sandelträ, vilket skapar ett långvarigt och raffinerat avslut.",
+    "notes": {
+      "top": [
+        "Koriander",
+        "Kardemumma",
+        "Aldehyder"
+      ],
+      "middle": [
+        "Rabarber",
+        "Ros",
+        "Liljekonvalj"
+      ],
+      "base": [
+        "Ambroxan",
+        "Ekmossa",
+        "Sandelträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/114flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/114flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 115,
+    "name": "Beaumont",
+    "title": "Beaumont 115.0",
+    "sku": "115",
+    "product_id": "gid://shopify/Product/9312805978454",
+    "handle": "beaumont-115-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "maison francis kurkdjian baccarat rouge 540 extrait de parfum"
+    ],
+    "description": "Denna doft öppnar med en fyllig och intensiv kombination av bittermandel och saffran, vilket skapar en rik och fängslande inledning. I hjärtat framträder egyptisk jasmin och cederträ som tillför elegans och djup. Basen avrundas med en varm och sensuell mix av mysk, ambergris och träiga noter, vilket lämnar ett långvarigt och lyxigt intryck.",
+    "notes": {
+      "top": [
+        "Bittermandel",
+        "Saffran"
+      ],
+      "middle": [
+        "Egyptisk Jasmin",
+        "Cederträ"
+      ],
+      "base": [
+        "Mysk",
+        "Ambergris",
+        "Träiga Noter"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/115flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/115flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 116,
+    "name": "Dupont",
+    "title": "Dupont 116.0",
+    "sku": "116",
+    "product_id": "gid://shopify/Product/9312815415638",
+    "handle": "dupont-116-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "ani nishane"
+    ],
+    "description": "Denna doft öppnar med en frisk och kryddig kombination av bergamott, ingefära och rosa peppar, som skapar en energisk och livlig inledning. I hjärtat finner du en rik blandning av svartvinbär, kardemumma och turkisk ros, vilket tillför djup och elegans. Basen avrundas med en varm och krämig mix av vanilj, sandelträ, ambergris och mysk, vilket ger ett sofistikerat och långvarigt avslut.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Ingefära",
+        "Rosa Peppar"
+      ],
+      "middle": [
+        "Svartvinbär",
+        "Kardemumma",
+        "Turkisk Ros"
+      ],
+      "base": [
+        "Vanilj",
+        "Sandelträ",
+        "Ambergris",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/116flaska.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/116flaska.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 117,
+    "name": "Lefèvre",
+    "title": "Lefèvre 117.0",
+    "sku": "117",
+    "product_id": "gid://shopify/Product/9312819478870",
+    "handle": "lefevre-117-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "hacivat nishane"
+    ],
+    "description": "Denna doft öppnar med en strålande och frisk kombination av bergamott, ananas och grapefrukt som ger en energisk och sofistikerad inledning. I hjärtat möts du av ekmossa, cederträ och jasmin som tillför elegans och djup. Basen avrundas med en varm och jordig mix av vetiver och träiga noter som skapar ett långvarigt och balanserat avslut.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Ananas",
+        "Grapefrukt"
+      ],
+      "middle": [
+        "Ekmossa",
+        "Cederträ",
+        "Jasmin"
+      ],
+      "base": [
+        "Vetiver",
+        "Träiga Noter"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/117flaska.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/117flaska.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 119,
+    "name": "Bourdelle",
+    "title": "Bourdelle 119.0",
+    "sku": "119",
+    "product_id": "gid://shopify/Product/9312825147734",
+    "handle": "bourdelle-119-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "richwood xerjoff"
+    ],
+    "description": "Denna doft öppnar med en elegant och frisk kombination av bergamott och grapefrukt som ger en strålande och upplyftande inledning. I hjärtat framträder den djupa och sofistikerade doften av ros och patchouli, vilket tillför en rik och förförisk karaktär. Basen avrundas med en varm och lyxig mix av sandelträ, vanilj och mysk, vilket skapar ett långvarigt och sofistikerat avslut.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Grapefrukt"
+      ],
+      "middle": [
+        "Ros",
+        "Patchouli"
+      ],
+      "base": [
+        "Sandelträ",
+        "Vanilj",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/119nyflaska_8b067207-9ca1-4bd3-a873-8b868fb7b469.png?v=1758731787",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/119nyflaska_8b067207-9ca1-4bd3-a873-8b868fb7b469.png?v=1758731787",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 131,
+    "name": "Ravel",
+    "title": "Ravel 131.0",
+    "sku": "131",
+    "product_id": "gid://shopify/Product/9312831701334",
+    "handle": "ravel-131-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "myslf eau de parfum yves saint laurent ysl myself"
+    ],
+    "description": "Denna doft öppnar med en fräsch och livlig kombination av bergamott och grönsöta noter, vilket ger en modern och energisk inledning. I hjärtat finns apelsinblomma och ambrofix som tillför en subtil elegans och maskulin värme. Basen avrundas med en rik och sensuell mix av tränoter och mysk, vilket skapar ett långvarigt och sofistikerat avslut.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Gröna Noter"
+      ],
+      "middle": [
+        "Apelsinblomma",
+        "Ambrofix"
+      ],
+      "base": [
+        "Tränoter",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/131nyflaska_1b720d96-4d75-48b7-b008-50b63e5e1dd1.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/131nyflaska_1b720d96-4d75-48b7-b008-50b63e5e1dd1.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 133,
+    "name": "Odilón",
+    "title": "Odilón 133.0",
+    "sku": "133",
+    "product_id": "gid://shopify/Product/9312836452694",
+    "handle": "odilon-133-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "oajan parfums de marly pdm"
+    ],
+    "description": "Denna doft öppnar med en rik och kryddig kombination av kanel, honung och osmanthus, vilket ger en varm och förförisk inledning. I hjärtat framträder tonkaböna, ambra och labdanum, vilket tillför en djup och söt karaktär. Basen avrundas med en mjuk och sensuell mix av vanilj, mysk och patchouli, vilket skapar ett långvarigt och lyxigt avslut.",
+    "notes": {
+      "top": [
+        "Kanel",
+        "Honung",
+        "Osmanthus"
+      ],
+      "middle": [
+        "Tonkaböna",
+        "Ambra",
+        "Labdanum"
+      ],
+      "base": [
+        "Vanilj",
+        "Mysk",
+        "Patchouli"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/133nyflaska_e88308f3-94c1-4707-8197-d7da5869974c.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/133nyflaska_e88308f3-94c1-4707-8197-d7da5869974c.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 134,
+    "name": "Méterre",
+    "title": "Méterre 134.0",
+    "sku": "134",
+    "product_id": "gid://shopify/Product/9312838418774",
+    "handle": "meterre-134-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "météore louis vuitton cologne lv meteor"
+    ],
+    "description": "Denna doft öppnar med en frisk och energisk blandning av siciliansk mandarin, bergamott och citrongräs som ger en upplyftande och livlig inledning. I hjärtat möts du av kryddig peppar, neroli och apelsinblomma som tillför elegans och intensitet. Basen avrundas med en subtil och sofistikerad kombination av vetiver och tränoter, vilket skapar ett långvarigt och balanserat avslut.",
+    "notes": {
+      "top": [
+        "Siciliansk Mandarin",
+        "Bergamott",
+        "Citrongräs"
+      ],
+      "middle": [
+        "Peppar",
+        "Neroli",
+        "Apelsinblomma"
+      ],
+      "base": [
+        "Vetiver",
+        "Tränoter"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/134nyflaska_b6d88ac1-7475-4f5f-8636-1804d263854f.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/134nyflaska_b6d88ac1-7475-4f5f-8636-1804d263854f.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 135,
+    "name": "Lumière",
+    "title": "Lumière 135.0",
+    "sku": "135",
+    "product_id": "gid://shopify/Product/9312841662806",
+    "handle": "lumiere-135-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "on the beach louis vuitton lv"
+    ],
+    "description": "Denna doft öppnar med en livlig och uppfriskande blandning av yuzu och neroli, vilket ger en solig och energisk inledning. I hjärtat framträder en subtil mix av timjan, rosmarin och rosa peppar, som tillför en aromatisk och kryddig karaktär. Basen avrundas med en mjuk och varm kombination av cypress och mysk, vilket skapar ett långvarigt och harmoniskt avslut.",
+    "notes": {
+      "top": [
+        "Yuzu",
+        "Neroli"
+      ],
+      "middle": [
+        "Timjan",
+        "Rosmarin",
+        "Rosa Peppar"
+      ],
+      "base": [
+        "Cypress",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/135nyflaska_c3cf1129-510f-4a7f-8b6e-072ad4f465c3.png?v=1758730893",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/135nyflaska_c3cf1129-510f-4a7f-8b6e-072ad4f465c3.png?v=1758730893",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 136,
+    "name": "Brandelle",
+    "title": "Brandelle 136.0",
+    "sku": "136",
+    "product_id": "gid://shopify/Product/9312843497814",
+    "handle": "brandelle-136-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "apple brandy on the rocks by kilian"
+    ],
+    "description": "Denna doft öppnar med en frisk och fruktig blandning av bergamott och ananas som ger en kylig och livlig inledning. I hjärtat framträder noter av rom och vanilj som tillför en fyllig och förförisk karaktär. Basen avrundas med en varm och träig kombination av ekträ, ambroxan och cederträ, vilket skapar ett sofistikerat och långvarigt avslut.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Ananas"
+      ],
+      "middle": [
+        "Rom",
+        "Vanilj"
+      ],
+      "base": [
+        "Ekträ",
+        "Ambroxan",
+        "Cederträ"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/136nyflaska_fcc7d54c-2cd8-42e5-a723-082da95f988c.png?v=1758730746",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/136nyflaska_fcc7d54c-2cd8-42e5-a723-082da95f988c.png?v=1758730746",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 138,
+    "name": "Céleste",
+    "title": "Céleste 138.0",
+    "sku": "138",
+    "product_id": "gid://shopify/Product/9428065517910",
+    "handle": "celeste-138-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "pdm sedley parfums de marly"
+    ],
+    "description": "Denna doft öppnar med en frisk explosion av mynta och bergamott. Hjärtat balanserar lavendel, geranium och rosmarin för att skapa en aromatisk komplexitet. Den avslutas med en elegant bas av vetiver, sandelträ, ambra och patchouli.",
+    "notes": {
+      "top": [
+        "Mynta",
+        "Bergamott",
+        "Citron",
+        "Grapefrukt"
+      ],
+      "middle": [
+        "Lavendel",
+        "Geranium",
+        "Rosmarin"
+      ],
+      "base": [
+        "Vetiver",
+        "Sandelträ",
+        "Ambra",
+        "Patchouli"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/138nyflaska.png?v=1758730650",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/138nyflaska.png?v=1758730650",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 139,
+    "name": "Flamore",
+    "title": "Flamore 139.0",
+    "sku": "139",
+    "product_id": "gid://shopify/Product/9428066599254",
+    "handle": "flamore-139-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "emporio armani stronger with you intensely giorgio armani swy"
+    ],
+    "description": "Denna doft öppnar med en fyllig sötma från karamelliserad kastanj och kryddig rosépeppar. Hjärtat förför med noter av lavendel och kanel som skapar en varm och beroendeframkallande karaktär. Basen avrundas med vanilj, tonkaböna och ambra för en sensuell och långvarig avslutning.",
+    "notes": {
+      "top": [
+        "Karamelliserad Kastanj",
+        "Rosépeppar",
+        "Enbär"
+      ],
+      "middle": [
+        "Lavendel",
+        "Kanel",
+        "Salvia"
+      ],
+      "base": [
+        "Vanilj",
+        "Tonkaböna",
+        "Ambra"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/139nyflaska_eeef0fe9-295d-4d69-a32d-e4f7de375fa3.png?v=1765627242",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/139nyflaska_eeef0fe9-295d-4d69-a32d-e4f7de375fa3.png?v=1765627242",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 140,
+    "name": "Melthor",
+    "title": "Melthor 140.0",
+    "sku": "140",
+    "product_id": "gid://shopify/Product/9428070039894",
+    "handle": "melthor-140-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "pdm haltane parfums de marly"
+    ],
+    "description": "Denna doft öppnar med en strålande friskhet av bergamott och klarapelsin. Hjärtat domineras av saffran och cederträ som skapar en kryddig och träig elegans. Basen är rik och djup, med noter av agarträ, vanilj och mysk som ger en varm och sofistikerad avslutning.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Klarapelsin"
+      ],
+      "middle": [
+        "Saffran",
+        "Cederträ",
+        "Lavendel"
+      ],
+      "base": [
+        "Agarträ (oud)",
+        "Vanilj",
+        "Mysk"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/140nyflaska_16a47794-c4d7-4bea-992b-80776c105b3b.png?v=1758730745",
+    "existing_notes_image": null,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/140nyflaska_16a47794-c4d7-4bea-992b-80776c105b3b.png?v=1758730745",
+        "width": 1024,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "number": 149,
+    "name": "Èclant",
+    "title": "Èclant 149.0",
+    "sku": "149",
+    "product_id": "gid://shopify/Product/9312857981270",
+    "handle": "eclant-149-0",
+    "status": "ACTIVE",
+    "inspired_by_tags": [
+      "creed aventus",
+      "creed aventus cologne",
+      "creed avnetus"
+    ],
+    "description": "Denna doft öppnar med en fräsch och fruktig blandning av bergamott, svarta vinbär, äpple och ananas, vilket skapar en livlig och sofistikerad inledning. I hjärtat framträder en elegant kombination av björk, jasmin och patchouli som tillför djup och karaktär. Basen avrundas med en varm och kraftfull mix av ekmossa, vanilj, mysk och ambergris, vilket lämnar ett långvarigt och ikoniskt avslut.",
+    "notes": {
+      "top": [
+        "Bergamott",
+        "Svarta Vinbär",
+        "Äpple",
+        "Ananas"
+      ],
+      "middle": [
+        "Björk",
+        "Jasmin",
+        "Patchouli"
+      ],
+      "base": [
+        "Ekmossa",
+        "Vanilj",
+        "Mysk",
+        "Ambergris"
+      ]
+    },
+    "bottle_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/149nyflaska.png?v=1758730165",
+    "existing_notes_image": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/EclantNoter.jpg?v=1767109134",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/149nyflaska.png?v=1758730165",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0814/6904/7126/files/EclantNoter.jpg?v=1767109134",
+        "width": 2048,
+        "height": 2048
+      }
+    ]
+  }
+]

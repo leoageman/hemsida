@@ -1,0 +1,57 @@
+# OBC "noter"-produktbilder (Nano Banana Pro)
+
+Pipeline för att skapa produktbilder där parfymflaskan står i mitten och fyra av doftens
+råvaror ligger runt foten, i samma stil som de befintliga bilderna
+`reference/existing-notes-images/` (Béchamp 1.0, Berzelius 10.0, Ostwald 18.0,
+Sørensen 26.0, Thompson 41.0 som redan ligger i Shopify).
+
+## Vad som finns här
+
+| Sökväg | Innehåll |
+|---|---|
+| `data/products.json` | Alla 77 parfymer från Shopify (nummer, namn, SKU, handle, product-id, topp-/mellan-/basnoter, bildlänkar). Byggs av `scripts/build_manifest.py`. |
+| `data/selection.json` | De fyra noter som valts för 1.0–10.0 + hur varje ingrediens ska se ut i bild. Lägg till fler nummer här för att köra fler parfymer. |
+| `data/shopify-raw/` | Råa Shopify Admin API-svar (GraphQL `products`) som manifestet byggs från. |
+| `reference/bottles/` | Nedladdade flaskbilder (1024 px) för 1.0–10.0. Skickas som referensbild till modellen. |
+| `reference/existing-notes-images/` | De fem noter-bilder som redan finns i Shopify, som stilreferens. |
+| `prompts/` | Färdiga prompts per parfym (genereras av `scripts/generate.py`). Kan klistras in manuellt i Gemini/AI Studio tillsammans med flaskbilden. |
+| `output/` | Hit sparas de genererade bilderna (`<nr>_<namn>_noter.png`). |
+
+## Köra genereringen
+
+```bash
+cd notes-images
+pip install -r requirements.txt
+export GEMINI_API_KEY=...        # https://aistudio.google.com/apikey
+
+python3 scripts/generate.py --dry-run          # skriver bara prompts/
+python3 scripts/generate.py --skus 1-10        # testkörning: parfym 1.0–10.0, 2K-bilder
+python3 scripts/generate.py --skus 3 --force   # gör om en enskild
+```
+
+Modell: `gemini-3-pro-image-preview` (Nano Banana Pro). Byt med `--model` eller
+`NANO_BANANA_MODEL=...`; `--list-models` visar vad nyckeln har tillgång till.
+Storlek: `--size 1K|2K|4K` (default 2K = 2048 px, samma som befintliga noter-bilder).
+
+## Manuellt i Gemini-appen / AI Studio
+
+1. Öppna `prompts/<nr>_<namn>.txt` och kopiera texten.
+2. Ladda upp motsvarande flaskbild från `reference/bottles/`.
+3. Välj bildmodellen (Nano Banana Pro) och kör.
+
+## Lägga till fler parfymer
+
+1. Hitta noterna i `data/products.json` (fältet `notes`).
+2. Lägg till numret i `data/selection.json` med fyra `{"note": ..., "visual": ...}`.
+   `note` ska vara exakt en not från Shopify; `visual` beskriver ingrediensen fysiskt på engelska.
+3. Kör `python3 scripts/generate.py --skus <nr>`.
+
+Uppdatera manifestet när Shopify ändras: spara nya API-svar i `data/shopify-raw/` och kör
+`python3 scripts/build_manifest.py`.
+
+## Noteringar
+
+- Béchamp 1.0 har bara tre noter i Shopify (kardemumma, kola, amberträ). Amberträ visas därför som
+  både harts och trä, som i den befintliga bilden.
+- Becquerel 108.0 saknar "Toppnoter/Mellannoter/Basnoter"-block i beskrivningen och får därför
+  `notes: null` i manifestet.
