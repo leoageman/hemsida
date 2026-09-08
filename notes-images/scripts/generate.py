@@ -40,12 +40,21 @@ DEFAULT_MODEL = "gemini-3-pro-image-preview"  # "Nano Banana Pro"
 DEFAULT_OPENAI_MODEL = "gpt-image-1"
 OPENAI_API = "https://api.openai.com/v1"
 
-PROMPT_TEMPLATE = """Edit this image. It is a product photo of a 50 ml perfume bottle from One Bold Chemist. Keep the bottle EXACTLY as it is: the same glass bottle shape, the same brushed silver cap, the same liquid colour, and the same label with the exact text "{label}", "extrait de parfum" and "one bold chemist" plus the same small halftone illustration inside the label's frame. Do not redraw, retouch or alter a single letter or the artwork on the label. Re-frame the scene so the unchanged bottle stands centred on a pure white surface, about 60% of the image height with its base a little below the middle of the frame, seen from a slightly elevated camera angle, leaving open white space around it.
+PROMPT_TEMPLATE = """Edit this image. Image 1 is a product photo of a 50 ml perfume bottle from One Bold Chemist.{style_ref}
 
-On the white surface around the bottle, place the fragrance's raw ingredients as four separate small groups, spread out in a loose ring mostly in front of and beside the bottle, with clear white space between the groups and at most one or two pieces peeking out behind the bottle. Nothing is stacked, heaped or piled up, and nothing covers the label:
+BOTTLE: keep the bottle exactly as in image 1: the same glass bottle, brushed silver cap and liquid colour, and the same label with the exact text "{label}", "extrait de parfum" and "one bold chemist" plus the same small halftone illustration. Do not redraw, rotate, tilt or alter the label in any way.
+
+CAMERA: the same camera as image 1: a straight-on front view with the camera slightly above the label so the top of the cap and the table surface are just visible, the label facing the camera squarely, no rotation of the bottle, a normal 85 mm lens with no wide-angle distortion. The bottle stands centred and takes about 60% of the image height.
+
+SCENE: one single real studio photograph, shot on a medium-format camera at f/11. The bottle and all ingredients stand together on the same white seamless paper sweep with a subtle grey falloff at the top, lit by one large, soft light from the upper left and gently filled from the right, so every object shares the same soft directional light, has a soft contact shadow under it falling to the lower right, and a faint reflection on the paper. The ingredients closest to the bottle are faintly reflected and refracted in its glass, and the bottle casts its own soft shadow across the ingredients on its right. Same colour temperature, same sharpness and fine grain across the whole frame, slight natural depth of field towards the back. Nothing may look cut out, pasted in or floating; every object sits firmly on the surface. Nothing but the white sweep and the objects standing on it is visible anywhere in the frame; the picture has no visible edges, panels, walls or equipment of any kind.
+
+INGREDIENTS: arrange the fragrance's raw ingredients around the base of the bottle in four separate small groups, in front of and beside the bottle only. The space directly behind the bottle stays completely empty, so nothing is seen through the glass and the label is read against plain background. Clear space between the groups, nothing piled up and nothing covering the label:
 {ingredients}
+Each ingredient is real, tactile and at true scale relative to a 50 ml bottle.
 
-Every ingredient is a real, physical, tactile object at true scale relative to a 50 ml bottle, lying flat on the surface with realistic textures and soft natural shadows. Airy, minimal editorial composition, like a clean ingredient flat lay shot from a slightly elevated front angle that matches the bottle's perspective. Pure seamless white background with soft, even studio lighting. No text, no captions, no extra props, no hands. Square 1:1 image, high-end product photography."""
+FRAMING: the whole arrangement, bottle and ingredients together, sits inside the central 80% of the frame; the outer 10% on every side is empty background. No object touches or crosses the picture edge: make an ingredient smaller or move it inward rather than letting it reach the edge. No text, captions, extra props or hands. Square 1:1, high-end product photography."""
+
+STYLE_REF_SENTENCE = " Image 2 is a finished example of exactly the look wanted: match its camera angle, bottle size, lighting, shadow direction, ingredient scale and framing."
 
 
 FLOW_TEMPLATE = """Product still life of the exact perfume bottle from the reference image: the same 50 ml glass bottle, brushed silver cap, liquid colour and label with the text "{label}", "extrait de parfum" and "one bold chemist" and the same small halftone illustration, reproduced exactly with no changes to the label. The bottle stands centred on a pure white surface, about 60% of the frame height, seen from a slightly elevated angle.
@@ -78,10 +87,10 @@ def parse_skus(spec: str | None, available: list[int]) -> list[int]:
     return [n for n in available if n in wanted]
 
 
-def build_prompt(product: dict, ingredients: list[dict]) -> str:
+def build_prompt(product: dict, ingredients: list[dict], style_ref: bool = False) -> str:
     label = f"{product['name'].upper()} {product['number']}.0"
     lines = "\n".join(f"{i}. {ing['visual']} ({ing['note']})" for i, ing in enumerate(ingredients, 1))
-    return PROMPT_TEMPLATE.format(label=label, ingredients=lines)
+    return PROMPT_TEMPLATE.format(label=label, ingredients=lines, style_ref=STYLE_REF_SENTENCE if style_ref else "")
 
 
 def build_flow_prompt(product: dict, ingredients: list[dict]) -> str:
@@ -173,15 +182,21 @@ def generate_image_openai(model: str, size: str, bottle: Path, prompt: str, retr
     raise RuntimeError(f"gav upp efter {retries} försök: {last_err}")
 
 
-def generate_image(client, model: str, size: str, bottle: Path, prompt: str, retries: int = 3) -> tuple[bytes, str]:
+def _image_part(path: Path):
     from google.genai import types  # noqa: PLC0415
 
-    mime = "image/jpeg" if bottle.suffix.lower() in (".jpg", ".jpeg") else "image/png"
+    mime = "image/jpeg" if path.suffix.lower() in (".jpg", ".jpeg") else "image/png"
+    return types.Part.from_bytes(data=path.read_bytes(), mime_type=mime)
+
+
+def generate_image(client, model: str, size: str, bottle: Path, prompt: str, retries: int = 3, style_ref: Path | None = None) -> tuple[bytes, str]:
+    from google.genai import types  # noqa: PLC0415
+
     config = types.GenerateContentConfig(
         response_modalities=["TEXT", "IMAGE"],
         image_config=types.ImageConfig(aspect_ratio="1:1", **({} if size == "auto" else {"image_size": size})),
     )
-    contents = [types.Part.from_bytes(data=bottle.read_bytes(), mime_type=mime), prompt]
+    contents = [_image_part(bottle)] + ([_image_part(style_ref)] if style_ref else []) + [prompt]
     last_err: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
@@ -213,6 +228,7 @@ def main() -> None:
     ap.add_argument("--force", action="store_true", help="generera om även om output-filen redan finns")
     ap.add_argument("--sleep", type=float, default=2.0, help="sekunder mellan API-anrop")
     ap.add_argument("--list-models", action="store_true", help="lista modeller som kan generera bilder och avsluta")
+    ap.add_argument("--style-ref", type=Path, default=None, help="färdig bild som stilreferens (skickas som bild 2 till Gemini), t.ex. output/04_bachelder_noter.jpg")
     ap.add_argument("--fetch-bottles", action="store_true", help="ladda bara ner flaskbilder från Shopify till reference/bottles/ (ingen generering)")
     args = ap.parse_args()
 
@@ -257,7 +273,7 @@ def main() -> None:
         if len(ingredients) != 4:
             print(f"  OBS: {product['title']} har {len(ingredients)} ingredienser i urvalet (förväntat 4)")
         stem = f"{product['number']:02d}_{slugify(product['name'])}"
-        prompt = build_prompt(product, ingredients)
+        prompt = build_prompt(product, ingredients, style_ref=bool(args.style_ref))
         (PROMPTS / f"{stem}.txt").write_text(prompt + "\n", encoding="utf-8")
         FLOW_PROMPTS.mkdir(exist_ok=True)
         (FLOW_PROMPTS / f"{stem}.txt").write_text(build_flow_prompt(product, ingredients) + "\n", encoding="utf-8")
@@ -274,7 +290,7 @@ def main() -> None:
             if args.provider == "openai":
                 data, mime = generate_image_openai(args.model, args.size, bottle, prompt)
             else:
-                data, mime = generate_image(client, args.model, args.size, bottle, prompt)
+                data, mime = generate_image(client, args.model, args.size, bottle, prompt, style_ref=args.style_ref)
             ext = "jpg" if "jpeg" in mime else "png"
             dest = OUTPUT / f"{stem}{suffix}.{ext}"
             dest.write_bytes(data)

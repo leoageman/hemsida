@@ -25,7 +25,7 @@ pip install -r requirements.txt
 export GEMINI_API_KEY=...        # https://aistudio.google.com/apikey
 
 python3 scripts/generate.py --dry-run          # skriver bara prompts/
-python3 scripts/generate.py --skus 1-10        # testkörning: parfym 1.0–10.0, 2K-bilder
+python3 scripts/generate.py --skus 1-10 --style-ref reference/style-ref.jpg   # parfym 1.0–10.0, 2K, med stilreferens
 python3 scripts/generate.py --skus 3 --force   # gör om en enskild
 ```
 
@@ -34,6 +34,8 @@ Modell: `gemini-3-pro-image-preview` (Nano Banana Pro; testbilderna 1.0–10.0 k
 Storlek: `--size 1K|2K|4K` (default 2K = 2048 px, samma som befintliga noter-bilder).
 
 GPT Image som alternativ: `python3 scripts/generate.py --provider openai --model gpt-image-2 --skus 2` (kräver `OPENAI_API_KEY`, max 1024 px).
+
+`--style-ref` skickar en färdig, godkänd bild som bild 2 till modellen så att vinkel, ljus och inramning hålls konsekvent. `reference/style-ref.jpg` är den bild som användes för 1.0–10.0.
 
 ## Manuellt i Gemini-appen / AI Studio
 
