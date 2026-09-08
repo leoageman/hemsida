@@ -123,7 +123,7 @@ def generate_image(client, model: str, size: str, bottle: Path, prompt: str, ret
     mime = "image/jpeg" if bottle.suffix.lower() in (".jpg", ".jpeg") else "image/png"
     config = types.GenerateContentConfig(
         response_modalities=["TEXT", "IMAGE"],
-        image_config=types.ImageConfig(aspect_ratio="1:1", image_size=size),
+        image_config=types.ImageConfig(aspect_ratio="1:1", **({} if size == "auto" else {"image_size": size})),
     )
     contents = [types.Part.from_bytes(data=bottle.read_bytes(), mime_type=mime), prompt]
     last_err: Exception | None = None
@@ -151,7 +151,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--skus", help="t.ex. '1-10' eller '1,4,9' (default: alla i selection.json)")
     ap.add_argument("--model", default=os.environ.get("NANO_BANANA_MODEL", DEFAULT_MODEL))
-    ap.add_argument("--size", default="2K", choices=["1K", "2K", "4K"], help="utbildens storlek (default 2K = 2048 px, som befintliga Noter-bilder)")
+    ap.add_argument("--size", default="2K", choices=["auto", "1K", "2K", "4K"], help="utbildens storlek (default 2K = 2048 px, som befintliga Noter-bilder; 'auto' = skicka ingen storlek, krävs för flash-image-modellerna)")
     ap.add_argument("--dry-run", action="store_true", help="skriv bara prompts, anropa inte API:et")
     ap.add_argument("--force", action="store_true", help="generera om även om output-filen redan finns")
     ap.add_argument("--sleep", type=float, default=2.0, help="sekunder mellan API-anrop")
