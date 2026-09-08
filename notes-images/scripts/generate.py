@@ -44,17 +44,19 @@ PROMPT_TEMPLATE = """Edit this image. Image 1 is a product photo of a 50 ml perf
 
 BOTTLE: keep the bottle exactly as in image 1: the same glass bottle, brushed silver cap and liquid colour, and the same label with the exact text "{label}", "extrait de parfum" and "one bold chemist" plus the same small halftone illustration. Do not redraw, rotate, tilt or alter the label in any way. The label is opaque printed paper wrapped around the glass: it is never transparent, and nothing beside or behind the bottle ever shows through it.
 
-CAMERA: a front view with the camera raised clearly above the bottle, looking down at about 20 degrees, so the full top of the cap is visible as an ellipse and the white surface stretches out in front of and around the bottle. The label faces the camera squarely, the bottle is not rotated, normal 85 mm lens with no wide-angle distortion. This exact camera height and angle is identical for every image in the series. The bottle stands centred and takes about 55% of the image height.
+CAMERA: a front view with the camera raised clearly above the bottle, looking down at about 20 degrees, so the full top of the cap is visible as an ellipse and the white surface stretches out in front of and around the bottle. The label faces the camera squarely, the bottle is not rotated, 100 mm macro-capable lens with no wide-angle distortion, tack sharp on the bottle and on every ingredient. This exact camera height, angle and distance is identical for every image in the series: the bottle is always the same size and in the same position, horizontally centred, the top of the cap about 15% below the top edge and the base of the bottle about 72% below the top edge, so the bottle spans about 57% of the image height. Never move the camera closer or further away.
 
 SCENE: one single real studio photograph, shot on a medium-format camera at f/11. The bottle and all ingredients stand together on the same pure white seamless surface that continues into a pure white background. The background is evenly lit, clean white everywhere, with no gradient, vignette, grey falloff or darkening at the top; the only tones on the white are the objects' soft shadows and reflections. Lit by one large, soft light from the upper left and gently filled from the right, so every object shares the same soft directional light, has a soft contact shadow under it falling to the lower right, and a faint reflection on the paper. The ingredients closest to the bottle are faintly reflected and refracted in its glass, and the bottle casts its own soft shadow across the ingredients on its right. Same colour temperature, same sharpness and fine grain across the whole frame, slight natural depth of field towards the back. Nothing may look cut out, pasted in or floating; every object sits firmly on the surface. Nothing but the white sweep and the objects standing on it is visible anywhere in the frame; the picture has no visible edges, panels, walls or equipment of any kind.
 
 INGREDIENTS: arrange the fragrance's raw ingredients around the base of the bottle in four separate small groups, in front of and beside the bottle only. The space directly behind the bottle stays completely empty, so nothing is seen through the glass and the label is read against plain background. Clear space between the groups, nothing piled up and nothing covering the label:
 {ingredients}
-Each ingredient is real, tactile and at true scale relative to a 50 ml bottle. Keep every group small and low: no group is taller than one third of the bottle's height, no single piece is longer than half the bottle's height, and there are only a few pieces per group.
+Each ingredient is at true scale relative to a 50 ml bottle. Keep every group small and low: no group is taller than one third of the bottle's height and no single piece is longer than half the bottle's height; a natural handful per group.
+
+REALISM: every ingredient is photographed with macro-level detail and looks like a real, slightly imperfect raw material picked up at a spice market or in a garden: visible surface texture, fibres, pores, ridges, tiny cracks, dust, moisture and natural colour variation, with small specular highlights where surfaces are glossy and soft translucency where light passes through. Nothing is idealised, symmetrical, waxy, plastic or illustrated, and nothing looks like a clean stock cut-out.
 
 FRAMING: the whole arrangement, bottle and ingredients together, sits inside the central 75% of the frame; the outer 12% on every side is empty white background. No object touches or crosses the picture edge: make an ingredient smaller or move it inward rather than letting it reach the edge. No text, captions, extra props or hands. Square 1:1, high-end product photography."""
 
-STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series: match its camera height and angle, bottle size, lighting and shadow direction exactly, so this image looks shot in the same session. Background must be pure white and every ingredient must stay well inside the frame, as described below."
+STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series: match its camera height, angle and distance exactly, so the bottle has the same size and the same position in the frame as in image 2, with the same lighting and shadow direction, as if shot in the same session without touching the camera. Background must be pure white and every ingredient must stay well inside the frame, as described below."
 
 
 FLOW_TEMPLATE = """Product still life of the exact perfume bottle from the reference image: the same 50 ml glass bottle, brushed silver cap, liquid colour and label with the text "{label}", "extrait de parfum" and "one bold chemist" and the same small halftone illustration, reproduced exactly with no changes to the label. The bottle stands centred on a pure white surface, about 60% of the frame height, seen from a slightly elevated angle.
@@ -146,25 +148,34 @@ def openai_list_models() -> None:
             print(m)
 
 
-def generate_image_openai(model: str, size: str, bottle: Path, prompt: str, retries: int = 3) -> tuple[bytes, str]:
-    """GPT Image via /images/edits: flaskbilden skickas som referens, input_fidelity=high bevarar etiketten."""
+def generate_image_openai(model: str, size: str, bottle: Path, prompt: str, retries: int = 3, style_ref: Path | None = None) -> tuple[bytes, str]:
+    """GPT Image via /images/edits: flaskbilden (och ev. stilreferens) skickas som bild 1 (och 2)."""
     import base64  # noqa: PLC0415
 
     import requests  # noqa: PLC0415
 
-    mime = "image/jpeg" if bottle.suffix.lower() in (".jpg", ".jpeg") else "image/png"
-    px = {"auto": "1024x1024", "1K": "1024x1024", "2K": "1024x1024", "4K": "1024x1024"}[size]
+    def mime_of(p: Path) -> str:
+        return "image/jpeg" if p.suffix.lower() in (".jpg", ".jpeg") else "image/png"
+
+    px = {"auto": "1024x1024", "1K": "1024x1024", "2K": "2048x2048", "4K": "2048x2048"}[size]
+    files = [("image[]", (bottle.name, bottle.read_bytes(), mime_of(bottle)))]
+    if style_ref:
+        files.append(("image[]", (style_ref.name, style_ref.read_bytes(), mime_of(style_ref))))
     last_err: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
             r = requests.post(
                 f"{OPENAI_API}/images/edits",
                 headers={"Authorization": f"Bearer {openai_key()}"},
-                files={"image": (bottle.name, bottle.read_bytes(), mime)},
+                files=files,
                 data={"model": model, "prompt": prompt, "n": "1", "size": px, "quality": "high", "output_format": "png",
                       **({"input_fidelity": "high"} if model.startswith("gpt-image-1") else {})},
                 timeout=600,
             )
+            if r.status_code == 400 and "size" in r.text and px != "1024x1024":
+                px = "1536x1536" if px == "2048x2048" and "1536x1536" in r.text else "1024x1024"
+                print(f"  storleken stöds inte, provar {px}")
+                continue
             if r.status_code != 200:
                 raise RuntimeError(f"HTTP {r.status_code}: {r.text[:400]}")
             item = r.json()["data"][0]
@@ -288,7 +299,7 @@ def main() -> None:
         try:
             bottle = ensure_bottle(product)
             if args.provider == "openai":
-                data, mime = generate_image_openai(args.model, args.size, bottle, prompt)
+                data, mime = generate_image_openai(args.model, args.size, bottle, prompt, style_ref=args.style_ref)
             else:
                 data, mime = generate_image(client, args.model, args.size, bottle, prompt, style_ref=args.style_ref)
             ext = "jpg" if "jpeg" in mime else "png"
