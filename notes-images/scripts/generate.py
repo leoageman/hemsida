@@ -9,6 +9,7 @@ För varje parfym i data/selection.json:
 
 Kräver:  pip install google-genai requests
          export GEMINI_API_KEY=...   (från https://aistudio.google.com/apikey)
+   eller  export OPENAI_API_KEY=...  och --provider openai (GPT Image, https://platform.openai.com/api-keys)
 
 Exempel:
   python3 scripts/generate.py --dry-run                # skriv bara prompts
@@ -36,6 +37,8 @@ PROMPTS = ROOT / "prompts"
 OUTPUT = ROOT / "output"
 
 DEFAULT_MODEL = "gemini-3-pro-image-preview"  # "Nano Banana Pro"
+DEFAULT_OPENAI_MODEL = "gpt-image-1"
+OPENAI_API = "https://api.openai.com/v1"
 
 PROMPT_TEMPLATE = """Edit this image. It is a product photo of a 50 ml perfume bottle from One Bold Chemist. Keep the bottle EXACTLY as it is: the same glass bottle shape, the same brushed silver cap, the same liquid colour, and the same label with the exact text "{label}", "extrait de parfum" and "one bold chemist" plus the same small halftone illustration inside the label's frame. Do not redraw, retouch or alter a single letter or the artwork on the label. Re-frame the scene so the unchanged bottle stands centred on a pure white surface, about 60% of the image height with its base a little below the middle of the frame, seen from a slightly elevated camera angle, leaving open white space around it.
 
@@ -117,6 +120,58 @@ def get_client():
     return genai.Client(api_key=key)
 
 
+def openai_key() -> str:
+    key = os.environ.get("OPENAI_API_KEY")
+    if not key:
+        raise SystemExit("Sätt OPENAI_API_KEY i miljön. Nyckel: https://platform.openai.com/api-keys")
+    return key
+
+
+def openai_list_models() -> None:
+    import requests  # noqa: PLC0415
+
+    r = requests.get(f"{OPENAI_API}/models", headers={"Authorization": f"Bearer {openai_key()}"}, timeout=60)
+    r.raise_for_status()
+    for m in sorted(x["id"] for x in r.json()["data"]):
+        if "image" in m or "dall" in m:
+            print(m)
+
+
+def generate_image_openai(model: str, size: str, bottle: Path, prompt: str, retries: int = 3) -> tuple[bytes, str]:
+    """GPT Image via /images/edits: flaskbilden skickas som referens, input_fidelity=high bevarar etiketten."""
+    import base64  # noqa: PLC0415
+
+    import requests  # noqa: PLC0415
+
+    mime = "image/jpeg" if bottle.suffix.lower() in (".jpg", ".jpeg") else "image/png"
+    px = {"auto": "1024x1024", "1K": "1024x1024", "2K": "1024x1024", "4K": "1024x1024"}[size]
+    last_err: Exception | None = None
+    for attempt in range(1, retries + 1):
+        try:
+            r = requests.post(
+                f"{OPENAI_API}/images/edits",
+                headers={"Authorization": f"Bearer {openai_key()}"},
+                files={"image": (bottle.name, bottle.read_bytes(), mime)},
+                data={"model": model, "prompt": prompt, "n": "1", "size": px, "quality": "high", "input_fidelity": "high", "output_format": "png"},
+                timeout=600,
+            )
+            if r.status_code != 200:
+                raise RuntimeError(f"HTTP {r.status_code}: {r.text[:400]}")
+            item = r.json()["data"][0]
+            if item.get("b64_json"):
+                return base64.b64decode(item["b64_json"]), "image/png"
+            if item.get("url"):
+                return requests.get(item["url"], timeout=120).content, "image/png"
+            raise RuntimeError("Inget bildinnehåll i svaret")
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            if attempt < retries:
+                wait = 5 * attempt
+                print(f"  försök {attempt} misslyckades ({e}); väntar {wait}s ...")
+                time.sleep(wait)
+    raise RuntimeError(f"gav upp efter {retries} försök: {last_err}")
+
+
 def generate_image(client, model: str, size: str, bottle: Path, prompt: str, retries: int = 3) -> tuple[bytes, str]:
     from google.genai import types  # noqa: PLC0415
 
@@ -150,7 +205,8 @@ def generate_image(client, model: str, size: str, bottle: Path, prompt: str, ret
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--skus", help="t.ex. '1-10' eller '1,4,9' (default: alla i selection.json)")
-    ap.add_argument("--model", default=os.environ.get("NANO_BANANA_MODEL", DEFAULT_MODEL))
+    ap.add_argument("--provider", default="gemini", choices=["gemini", "openai"], help="gemini = Nano Banana Pro (default), openai = GPT Image")
+    ap.add_argument("--model", default=None, help=f"modell-id (default {DEFAULT_MODEL} / {DEFAULT_OPENAI_MODEL})")
     ap.add_argument("--size", default="2K", choices=["auto", "1K", "2K", "4K"], help="utbildens storlek (default 2K = 2048 px, som befintliga Noter-bilder; 'auto' = skicka ingen storlek, krävs för flash-image-modellerna)")
     ap.add_argument("--dry-run", action="store_true", help="skriv bara prompts, anropa inte API:et")
     ap.add_argument("--force", action="store_true", help="generera om även om output-filen redan finns")
@@ -159,6 +215,11 @@ def main() -> None:
     ap.add_argument("--fetch-bottles", action="store_true", help="ladda bara ner flaskbilder från Shopify till reference/bottles/ (ingen generering)")
     args = ap.parse_args()
 
+    if args.model is None:
+        args.model = DEFAULT_OPENAI_MODEL if args.provider == "openai" else os.environ.get("NANO_BANANA_MODEL", DEFAULT_MODEL)
+    if args.list_models and args.provider == "openai":
+        openai_list_models()
+        return
     if args.list_models:
         client = get_client()
         for m in client.models.list():
@@ -180,7 +241,10 @@ def main() -> None:
 
     PROMPTS.mkdir(exist_ok=True)
     OUTPUT.mkdir(exist_ok=True)
-    client = None if args.dry_run else get_client()
+    client = None if (args.dry_run or args.provider == "openai") else get_client()
+    if args.provider == "openai" and not args.dry_run:
+        openai_key()
+    suffix = "_noter_gpt" if args.provider == "openai" else "_noter"
     failures: list[str] = []
 
     for n in numbers:
@@ -200,15 +264,18 @@ def main() -> None:
 
         if args.dry_run:
             continue
-        existing = [p for p in OUTPUT.glob(f"{stem}_noter.*")]
+        existing = [p for p in OUTPUT.glob(f"{stem}{suffix}.*")]
         if existing and not args.force:
             print(f"  finns redan: {existing[0].name} (använd --force för att göra om)")
             continue
         try:
             bottle = ensure_bottle(product)
-            data, mime = generate_image(client, args.model, args.size, bottle, prompt)
+            if args.provider == "openai":
+                data, mime = generate_image_openai(args.model, args.size, bottle, prompt)
+            else:
+                data, mime = generate_image(client, args.model, args.size, bottle, prompt)
             ext = "jpg" if "jpeg" in mime else "png"
-            dest = OUTPUT / f"{stem}_noter.{ext}"
+            dest = OUTPUT / f"{stem}{suffix}.{ext}"
             dest.write_bytes(data)
             print(f"  sparade {dest.relative_to(ROOT)} ({len(data) // 1024} kB)")
         except Exception as e:  # noqa: BLE001
