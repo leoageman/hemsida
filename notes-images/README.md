@@ -15,7 +15,7 @@ Sørensen 26.0, Thompson 41.0 som redan ligger i Shopify).
 | `reference/bottles/` | Nedladdade flaskbilder (1024 px) för 1.0–10.0. Skickas som referensbild till modellen. |
 | `reference/existing-notes-images/` | De fem noter-bilder som redan finns i Shopify, som stilreferens. |
 | `prompts/` | Färdiga prompts per parfym (genereras av `scripts/generate.py`). Kan klistras in manuellt i Gemini/AI Studio tillsammans med flaskbilden. |
-| `output/` | Hit sparas de genererade bilderna (`<nr>_<namn>_noter.png`). |
+| `output/` | Genererade bilder. 1.0–10.0 är gjorda med Nano Banana Pro (`gemini-3-pro-image`, 2K, JPEG). `02_pasteur_noter_gpt.png` är jämförelsebilden från gpt-image-2. |
 
 ## Köra genereringen
 
@@ -29,9 +29,11 @@ python3 scripts/generate.py --skus 1-10        # testkörning: parfym 1.0–10.0
 python3 scripts/generate.py --skus 3 --force   # gör om en enskild
 ```
 
-Modell: `gemini-3-pro-image-preview` (Nano Banana Pro). Byt med `--model` eller
+Modell: `gemini-3-pro-image-preview` (Nano Banana Pro; testbilderna 1.0–10.0 kördes med `--model gemini-3-pro-image`). Byt med `--model` eller
 `NANO_BANANA_MODEL=...`; `--list-models` visar vad nyckeln har tillgång till.
 Storlek: `--size 1K|2K|4K` (default 2K = 2048 px, samma som befintliga noter-bilder).
+
+GPT Image som alternativ: `python3 scripts/generate.py --provider openai --model gpt-image-2 --skus 2` (kräver `OPENAI_API_KEY`, max 1024 px).
 
 ## Manuellt i Gemini-appen / AI Studio
 

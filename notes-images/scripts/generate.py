@@ -152,7 +152,8 @@ def generate_image_openai(model: str, size: str, bottle: Path, prompt: str, retr
                 f"{OPENAI_API}/images/edits",
                 headers={"Authorization": f"Bearer {openai_key()}"},
                 files={"image": (bottle.name, bottle.read_bytes(), mime)},
-                data={"model": model, "prompt": prompt, "n": "1", "size": px, "quality": "high", "input_fidelity": "high", "output_format": "png"},
+                data={"model": model, "prompt": prompt, "n": "1", "size": px, "quality": "high", "output_format": "png",
+                      **({"input_fidelity": "high"} if model.startswith("gpt-image-1") else {})},
                 timeout=600,
             )
             if r.status_code != 200:
