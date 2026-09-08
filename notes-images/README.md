@@ -50,6 +50,20 @@ python3 scripts/normalize.py output/*_noter_gpt.png --out output/final --cap-top
 alla flaskor får samma storlek och plats. `--fit` väljer den största storlek som ryms i alla bilder utan att någon
 ingrediens klipps; `--cap-width 0.14` låser samma storlek när fler parfymer körs senare, så nya bilder matchar de gamla.
 
+## Slutbilder och normalisering
+
+`output/final/` är leveransen: gpt-image-2-bilderna (`output/*_noter_gpt.png`) normaliserade så att
+flaskan har exakt samma storlek och position i alla bilder och bakgrunden är exakt vit.
+
+```bash
+python3 scripts/generate.py --provider openai --model gpt-image-2 --size 2K --style-ref reference/style-ref.jpg --skus 1-10
+python3 scripts/normalize.py output/*_noter_gpt.png --out output/final --cap-top 0.15 --fit
+```
+
+`normalize.py` vitbalanserar bakgrunden, mäter kapsylens överkant och bredd, och skalar/förskjuter så att
+kapsyltoppen hamnar på 15 % av höjden. `--fit` väljer största gemensamma flaskstorlek som ryms i alla
+bilder utan att något klipps; för att nya bilder ska matcha de här tio, använd i stället `--cap-width 0.134`.
+
 ## Manuellt i Gemini-appen / AI Studio
 
 1. Öppna `prompts/<nr>_<namn>.txt` och kopiera texten.
