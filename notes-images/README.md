@@ -35,7 +35,7 @@ Storlek: `--size 1K|2K|4K` (default 2K = 2048 px, samma som befintliga noter-bil
 
 GPT Image som alternativ: `python3 scripts/generate.py --provider openai --model gpt-image-2 --skus 2` (kräver `OPENAI_API_KEY`, max 1024 px).
 
-`--style-ref` skickar en färdig, godkänd bild som bild 2 till modellen så att vinkel, ljus och inramning hålls konsekvent. `reference/style-ref.jpg` är den bild som användes för 1.0–10.0.
+`--style-ref` skickar en färdig, godkänd bild som bild 2 till modellen så att vinkel, ljus och inramning hålls konsekvent. `reference/style-ref.jpg` (Avogadro 6.0) är den bild som användes för 1.0–10.0: kamera ca 20° ovanifrån, helt vit bakgrund, allt inom de centrala 75 % av bilden.
 
 ## Manuellt i Gemini-appen / AI Studio
 
