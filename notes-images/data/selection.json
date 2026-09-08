@@ -3,82 +3,202 @@
   "1": {
     "comment": "Shopify listar bara tre noter (kardemumma, kola, amberträ). Amberträ visas därför som både amberharts och amberträ, precis som i den befintliga Noter-bilden.",
     "ingredients": [
-      {"note": "Kardemumma", "visual": "a small heap of whole green cardamom pods, a couple split open with loose dark cardamom seeds scattered on the surface"},
-      {"note": "Kola", "visual": "soft golden-brown caramel toffee cubes, two of them stacked, with thick glossy caramel sauce slowly dripping down their sides"},
-      {"note": "Amberträ (harts)", "visual": "rough translucent amber resin chunks in warm honey-orange tones that catch the light"},
-      {"note": "Amberträ (trä)", "visual": "dry splintered pieces of amberwood with warm reddish-brown bark and a few small wood shavings"}
+      {
+        "note": "Kardemumma",
+        "visual": "a loose scatter of whole green cardamom pods with a few dark cardamom seeds spilled beside them"
+      },
+      {
+        "note": "Kola",
+        "visual": "soft golden-brown caramel toffee cubes, some wrapped in clear twisted cellophane and some unwrapped, no sauce"
+      },
+      {
+        "note": "Amberträ (harts)",
+        "visual": "one rough chunk of dark translucent amber resin with honey-orange highlights"
+      },
+      {
+        "note": "Amberträ (trä)",
+        "visual": "a few dark, splintered, resin-streaked amberwood chips"
+      }
     ]
   },
   "2": {
     "ingredients": [
-      {"note": "Kastanj", "visual": "glossy dark-brown sweet chestnuts, one cracked open to show the pale golden roasted nut inside"},
-      {"note": "Socker", "visual": "a few white sugar cubes with a small scatter of coarse sugar crystals around them"},
-      {"note": "Lavendel", "visual": "two fresh lavender sprigs with purple flower spikes"},
-      {"note": "Vanilj", "visual": "two dark, slightly wrinkled vanilla pods, one split lengthwise to show the tiny black seeds"}
+      {
+        "note": "Kastanj",
+        "visual": "glossy dark-brown sweet chestnuts, one cracked open to show the pale golden roasted nut inside"
+      },
+      {
+        "note": "Socker",
+        "visual": "a few white sugar cubes with a small scatter of coarse sugar crystals around them"
+      },
+      {
+        "note": "Lavendel",
+        "visual": "two fresh lavender sprigs with purple flower spikes"
+      },
+      {
+        "note": "Vanilj",
+        "visual": "two dark, slightly wrinkled vanilla pods, one split lengthwise to show the tiny black seeds"
+      }
     ]
   },
   "3": {
     "ingredients": [
-      {"note": "Kalabrisk Bergamott", "visual": "a whole green-yellow bergamot citrus fruit with a leaf, and one bergamot cut in half showing the pale juicy flesh"},
-      {"note": "Aromatisk lavendel", "visual": "fresh lavender sprigs with purple flower spikes"},
-      {"note": "Stjärnanis", "visual": "several whole brown star anise pods"},
-      {"note": "Madagaskisk Vanilj", "visual": "two dark glossy vanilla pods, one split open"}
+      {
+        "note": "Kalabrisk Bergamott",
+        "visual": "a whole green-yellow bergamot citrus fruit with a leaf, and one bergamot cut in half showing the pale juicy flesh"
+      },
+      {
+        "note": "Aromatisk lavendel",
+        "visual": "fresh lavender sprigs with purple flower spikes"
+      },
+      {
+        "note": "Stjärnanis",
+        "visual": "several whole brown star anise pods"
+      },
+      {
+        "note": "Madagaskisk Vanilj",
+        "visual": "two dark glossy vanilla pods, one split open"
+      }
     ]
   },
   "4": {
     "ingredients": [
-      {"note": "Saffran", "visual": "a small loose pile of deep red saffron threads"},
-      {"note": "Jasmin", "visual": "a few fresh white jasmine flowers with glossy green leaves"},
-      {"note": "Ambra", "visual": "translucent golden-orange amber resin chunks with rough edges"},
-      {"note": "Cederträ", "visual": "a split piece of cedar wood with warm reddish grain and a few curled cedar shavings"}
+      {
+        "note": "Saffran",
+        "visual": "a small loose pile of deep red saffron threads"
+      },
+      {
+        "note": "Jasmin",
+        "visual": "a few fresh white jasmine flowers with glossy green leaves"
+      },
+      {
+        "note": "Ambra",
+        "visual": "translucent golden-orange amber resin chunks with rough edges"
+      },
+      {
+        "note": "Cederträ",
+        "visual": "a split piece of cedar wood with warm reddish grain and a few curled cedar shavings"
+      }
     ]
   },
   "5": {
     "ingredients": [
-      {"note": "Lavendel", "visual": "fresh lavender sprigs with purple flower spikes"},
-      {"note": "Iris", "visual": "a single purple-blue iris blossom on a green stem"},
-      {"note": "Päron", "visual": "a ripe green-yellow pear, plus one pear half showing the white flesh and seeds"},
-      {"note": "Virginia-ceder", "visual": "a rough chunk of Virginia cedar wood with reddish-brown heartwood and a few cedar shavings"}
+      {
+        "note": "Lavendel",
+        "visual": "fresh lavender sprigs with purple flower spikes"
+      },
+      {
+        "note": "Iris",
+        "visual": "a single purple-blue iris blossom on a green stem"
+      },
+      {
+        "note": "Päron",
+        "visual": "a ripe green-yellow pear, plus one pear half showing the white flesh and seeds"
+      },
+      {
+        "note": "Virginia-ceder",
+        "visual": "a rough chunk of Virginia cedar wood with reddish-brown heartwood and a few cedar shavings"
+      }
     ]
   },
   "6": {
     "ingredients": [
-      {"note": "Havsnoter", "visual": "a small mound of coarse white sea salt flakes and crystals"},
-      {"note": "Bergamott", "visual": "a whole green-yellow bergamot fruit and one half cut open"},
-      {"note": "Rosmarin", "visual": "two fresh rosemary sprigs with needle-like green leaves"},
-      {"note": "Rökelse", "visual": "a scatter of pale golden frankincense resin tears (incense resin)"}
+      {
+        "note": "Havsnoter",
+        "visual": "a small mound of coarse white sea salt flakes and crystals"
+      },
+      {
+        "note": "Bergamott",
+        "visual": "a whole green-yellow bergamot fruit and one half cut open"
+      },
+      {
+        "note": "Rosmarin",
+        "visual": "two fresh rosemary sprigs with needle-like green leaves"
+      },
+      {
+        "note": "Rökelse",
+        "visual": "a scatter of pale golden frankincense resin tears (incense resin)"
+      }
     ]
   },
   "7": {
     "ingredients": [
-      {"note": "Sandelträ", "visual": "a pale cream-yellow chunk of sandalwood with a few thin sandalwood shavings"},
-      {"note": "Läder", "visual": "a folded strip of natural tan leather with visible grain"},
-      {"note": "Kardemumma", "visual": "whole green cardamom pods with a few loose dark seeds"},
-      {"note": "Viol", "visual": "a few small purple violet flowers with green leaves"}
+      {
+        "note": "Sandelträ",
+        "visual": "a pale cream-yellow chunk of sandalwood with a few thin sandalwood shavings"
+      },
+      {
+        "note": "Läder",
+        "visual": "a folded strip of natural tan leather with visible grain"
+      },
+      {
+        "note": "Kardemumma",
+        "visual": "whole green cardamom pods with a few loose dark seeds"
+      },
+      {
+        "note": "Viol",
+        "visual": "a few small purple violet flowers with green leaves"
+      }
     ]
   },
   "8": {
     "ingredients": [
-      {"note": "Neroli", "visual": "fresh white orange blossom (neroli) flowers with glossy green leaves"},
-      {"note": "Svartpeppar", "visual": "a scatter of whole black peppercorns"},
-      {"note": "Iris", "visual": "a single purple-blue iris blossom"},
-      {"note": "Cederträ", "visual": "a split piece of cedar wood with warm reddish grain"}
+      {
+        "note": "Neroli",
+        "visual": "fresh white orange blossom (neroli) flowers with glossy green leaves"
+      },
+      {
+        "note": "Svartpeppar",
+        "visual": "a scatter of whole black peppercorns"
+      },
+      {
+        "note": "Iris",
+        "visual": "a single purple-blue iris blossom"
+      },
+      {
+        "note": "Cederträ",
+        "visual": "a split piece of cedar wood with warm reddish grain"
+      }
     ]
   },
   "9": {
     "ingredients": [
-      {"note": "Grapefrukt", "visual": "a pink grapefruit cut in half showing the juicy pink-red flesh, with a whole grapefruit behind it"},
-      {"note": "Svartvinbär", "visual": "a cluster of glossy dark blackcurrants on the stem with a few leaves"},
-      {"note": "Ingefära", "visual": "a knobbly fresh ginger root, one end sliced to show the pale yellow interior"},
-      {"note": "Kanel", "visual": "a few rolled cinnamon sticks"}
+      {
+        "note": "Grapefrukt",
+        "visual": "a pink grapefruit cut in half showing the juicy pink-red flesh, with a whole grapefruit behind it"
+      },
+      {
+        "note": "Svartvinbär",
+        "visual": "a cluster of glossy dark blackcurrants on the stem with a few leaves"
+      },
+      {
+        "note": "Ingefära",
+        "visual": "a knobbly fresh ginger root, one end sliced to show the pale yellow interior"
+      },
+      {
+        "note": "Kanel",
+        "visual": "a few rolled cinnamon sticks"
+      }
     ]
   },
   "10": {
     "ingredients": [
-      {"note": "Kastanj", "visual": "glossy brown sweet chestnuts, one cracked open showing the roasted golden nut"},
-      {"note": "Enbär", "visual": "a juniper sprig with green needles and dusty blue-black juniper berries"},
-      {"note": "Kryddnejlika", "visual": "a small scatter of whole dried cloves"},
-      {"note": "Vanilj", "visual": "two dark vanilla pods, one split lengthwise"}
+      {
+        "note": "Kastanj",
+        "visual": "glossy brown sweet chestnuts, one cracked open showing the roasted golden nut"
+      },
+      {
+        "note": "Enbär",
+        "visual": "a juniper sprig with green needles and dusty blue-black juniper berries"
+      },
+      {
+        "note": "Kryddnejlika",
+        "visual": "a small scatter of whole dried cloves"
+      },
+      {
+        "note": "Vanilj",
+        "visual": "two dark vanilla pods, one split lengthwise"
+      }
     ]
   }
 }
