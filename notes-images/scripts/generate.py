@@ -45,6 +45,16 @@ On the white surface around the bottle, place the fragrance's raw ingredients as
 Every ingredient is a real, physical, tactile object at true scale relative to a 50 ml bottle, lying flat on the surface with realistic textures and soft natural shadows. Airy, minimal editorial composition, like a clean ingredient flat lay shot from a slightly elevated front angle that matches the bottle's perspective. Pure seamless white background with soft, even studio lighting. No text, no captions, no extra props, no hands. Square 1:1 image, high-end product photography."""
 
 
+FLOW_TEMPLATE = """Product still life of the exact perfume bottle from the reference image: the same 50 ml glass bottle, brushed silver cap, liquid colour and label with the text "{label}", "extrait de parfum" and "one bold chemist" and the same small halftone illustration, reproduced exactly with no changes to the label. The bottle stands centred on a pure white surface, about 60% of the frame height, seen from a slightly elevated angle.
+
+Around it, spread out as four separate small groups with clear white space between them, mostly in front of and beside the bottle, nothing piled up and nothing hiding the label:
+{ingredients}
+
+Everything at true scale relative to a 50 ml bottle, realistic textures, soft natural shadows on the white surface. Airy, minimal editorial flat lay, pure seamless white background, soft even studio light. No text or captions, no extra props, no hands. Square 1:1, high-end product photography."""
+
+FLOW_PROMPTS = PROMPTS / "flow"
+
+
 def slugify(name: str) -> str:
     name = name.replace("ø", "o").replace("Ø", "O").replace("æ", "ae").replace("Æ", "AE").replace("ß", "ss")
     name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
@@ -69,6 +79,12 @@ def build_prompt(product: dict, ingredients: list[dict]) -> str:
     label = f"{product['name'].upper()} {product['number']}.0"
     lines = "\n".join(f"{i}. {ing['visual']} ({ing['note']})" for i, ing in enumerate(ingredients, 1))
     return PROMPT_TEMPLATE.format(label=label, ingredients=lines)
+
+
+def build_flow_prompt(product: dict, ingredients: list[dict]) -> str:
+    label = f"{product['name'].upper()} {product['number']}.0"
+    lines = "\n".join(f"- {ing['visual']} ({ing['note']})" for ing in ingredients)
+    return FLOW_TEMPLATE.format(label=label, ingredients=lines)
 
 
 def ensure_bottle(product: dict) -> Path:
@@ -178,6 +194,8 @@ def main() -> None:
         stem = f"{product['number']:02d}_{slugify(product['name'])}"
         prompt = build_prompt(product, ingredients)
         (PROMPTS / f"{stem}.txt").write_text(prompt + "\n", encoding="utf-8")
+        FLOW_PROMPTS.mkdir(exist_ok=True)
+        (FLOW_PROMPTS / f"{stem}.txt").write_text(build_flow_prompt(product, ingredients) + "\n", encoding="utf-8")
         print(f"{product['title']}: {', '.join(i['note'] for i in ingredients)}")
 
         if args.dry_run:
@@ -198,8 +216,13 @@ def main() -> None:
             print(f"  FEL: {e}")
         time.sleep(args.sleep)
 
+    FLOW_PROMPTS.mkdir(exist_ok=True)
+    (FLOW_PROMPTS / "TEMPLATE.txt").write_text(
+        FLOW_TEMPLATE.format(label="NAMN N.0", ingredients="- <ingrediens 1, hur den ser ut> (<not>)\n- <ingrediens 2> (<not>)\n- <ingrediens 3> (<not>)\n- <ingrediens 4> (<not>)") + "\n",
+        encoding="utf-8",
+    )
     if args.dry_run:
-        print(f"\nPrompts skrivna till {PROMPTS.relative_to(ROOT)}/ (dry-run, inget genererat)")
+        print(f"\nPrompts skrivna till {PROMPTS.relative_to(ROOT)}/ (API) och {FLOW_PROMPTS.relative_to(ROOT)}/ (Google Flow) (dry-run, inget genererat)")
     elif failures:
         print("\nMisslyckades:\n  " + "\n  ".join(failures))
         sys.exit(1)
