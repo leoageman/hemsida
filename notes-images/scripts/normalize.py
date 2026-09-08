@@ -43,8 +43,22 @@ def content_bbox(im: Image.Image) -> tuple[int, int, int, int]:
     return int(xs.min()), int(ys.min()), int(xs.max()), int(ys.max())
 
 
+def white_balance_background(im: Image.Image) -> tuple[Image.Image, tuple[int, int, int]]:
+    """Skalar varje färgkanal så att bakgrunden (medianen av kantpixlarna) blir exakt vit.
+
+    Modellernas 'vita' är ofta svagt varm (t.ex. 252,251,251); utan detta syns en tonad
+    fyrkant där bilden möter den vita duken efter skalning."""
+    a = np.asarray(im.convert("RGB")).astype(np.float32)
+    h, w, _ = a.shape
+    b = max(4, int(min(h, w) * 0.03))
+    border = np.concatenate([a[:b].reshape(-1, 3), a[-b:].reshape(-1, 3), a[:, :b].reshape(-1, 3), a[:, -b:].reshape(-1, 3)])
+    bg = np.median(border, axis=0)
+    out = np.clip(a * (255.0 / np.maximum(bg, 1.0)), 0, 255)
+    return Image.fromarray(out.astype(np.uint8)), tuple(int(x) for x in bg)
+
+
 def normalize(path: Path, out_dir: Path, cap_top_frac: float, cap_width_frac: float, fmt: str, quality: int) -> str:
-    im = Image.open(path).convert("RGB")
+    im, bg = white_balance_background(Image.open(path).convert("RGB"))
     w, h = im.size
     top, cap_w, cx = measure_cap(im)
     s = (cap_width_frac * w) / cap_w
@@ -61,7 +75,7 @@ def normalize(path: Path, out_dir: Path, cap_top_frac: float, cap_width_frac: fl
     dest = out_dir / f"{stem}.{ext}"
     canvas.save(dest, "JPEG", quality=quality, subsampling=0) if fmt == "jpeg" else canvas.save(dest, "PNG")
     note = "  OBS: innehåll klipps vid kanten" if clipped else ""
-    return f"{path.name}: kapsyltopp {top/h:.3f}, kapsylbredd {cap_w/w:.3f} -> skala {s:.3f}{note}"
+    return f"{path.name}: bakgrund {bg} -> vit, kapsyltopp {top/h:.3f}, kapsylbredd {cap_w/w:.3f} -> skala {s:.3f}{note}"
 
 
 def main() -> None:
