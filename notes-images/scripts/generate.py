@@ -115,10 +115,14 @@ def build_editorial_prompt(product: dict, sel: dict, style_ref: bool = False) ->
     label = f"{product['name'].upper()} {product['number']}.0"
     lines = "\n".join(f"{i}. {ing['visual']} ({ing['note']})" for i, ing in enumerate(sel["ingredients"], 1))
     spelled = " ".join(ch for ch in f"{product['name'].upper()} {product['number']}.0" if ch != " ")
-    return EDITORIAL_TEMPLATE.format(
+    prompt = EDITORIAL_TEMPLATE.format(
         label=label, label_spelled=spelled, ingredients=lines, backdrop=sel["backdrop"],
         style_ref=EDITORIAL_STYLE_REF_SENTENCE if style_ref else "",
     )
+    if sel.get("label_fix"):
+        prompt = prompt.replace("Reproduce every letter of the name exactly as in image 1, in the same font;",
+                                f"IMPORTANT: the label in image 1 contains a misprint; print the name exactly as \"{label}\" ({spelled}) in the same font, correcting image 1;")
+    return prompt
 
 
 def build_flow_prompt(product: dict, ingredients: list[dict]) -> str:
