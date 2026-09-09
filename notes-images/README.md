@@ -74,7 +74,8 @@ motivering i `backdrop_source`). Leveransen ligger i `output/final_editorial/`.
 python3 scripts/generate.py --provider openai --model gpt-image-2 --size 2K --style editorial --style-ref reference/style-ref-editorial.jpg --skus 1-10
 ```
 
-Stilreferensen är Bachelder 4.0 (v3: kapsyl med krage och glasskuldra, dämpad gradient med cream nedtill).
+Stilreferensen är Bachelder 4.0 (v4: utzoomad, flaskan ca en tredjedel av höjden, hyllan i nedre tredjedelen,
+kapsyl med krage och glasskuldra, dämpad gradient med cream nedtill).
 OBS: referensen visar en annan doft, och prompten säger uttryckligen att etikettext, illustration och
 vätskefärg aldrig får kopieras från den, och att namnet ska återges bokstav för bokstav. Kontrollera ändå
 etiketten på varje bild. Känt: Shopifys flaskbild för Macquer 29.0 har etiketten "MAQCUER", så den
@@ -113,3 +114,23 @@ Uppdatera manifestet när Shopify ändras: spara nya API-svar i `data/shopify-ra
   både harts och trä, som i den befintliga bilden.
 - Becquerel 108.0 saknar "Toppnoter/Mellannoter/Basnoter"-block i beskrivningen och får därför
   `notes: null` i manifestet.
+
+## Kända avvikelser mellan Shopify-titel och tryckt etikett
+
+Bilderna återger etiketten som den ser ut på Shopifys flaskfoto. Tre produkter avviker från titeln:
+
+| Produkt (titel) | Etikett på flaskfotot | Hantering |
+|---|---|---|
+| Macquer 29.0 | MAQCUER 29.0 | Referensfotot rättat (Q/C bytta) i `reference/bottles/29_macquer.png`; original i `29_macquer_shopify_original.png`. Bilden visar MACQUER. |
+| Lefèvre 117.0 | LÈFEVRE 117.0 | Oförändrat; bilden följer fotot. |
+| Èclant 149.0 | ÉCLANT 149.0 | Oförändrat; bilden följer fotot. |
+
+## Hela flödet för en ny doft
+
+```bash
+python3 scripts/build_manifest.py                      # om Shopify-data ändrats
+# lägg till nummer i data/selection.json (4 noter + backdrop)
+python3 scripts/generate.py --provider openai --model gpt-image-2 --size 2K --style editorial \
+    --style-ref reference/style-ref-editorial.jpg --skus <nr>
+python3 scripts/smooth_backdrop.py output/<nr>_*_editorial_gpt.png --out output/final_editorial
+```
