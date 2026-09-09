@@ -20,8 +20,8 @@
         "visual": "a few small dark splintered amberwood chips with rough fibrous grain, resin-streaked and slightly dusty"
       }
     ],
-    "backdrop": "warm caramel gold at the top left flowing into deep amber orange at the bottom right",
-    "anchor": "a slender, dry, resin-streaked piece of dark amberwood driftwood"
+    "backdrop": "near-black charcoal brown at the top fading into warm golden amber at the bottom",
+    "backdrop_source": "Azzaro Most Wanted Intense: svart/guld"
   },
   "2": {
     "ingredients": [
@@ -42,8 +42,8 @@
         "visual": "two dark-brown, wrinkled, slightly oily vanilla pods, one split lengthwise showing the moist black seed paste"
       }
     ],
-    "backdrop": "soft creamy beige at the top left flowing into warm chestnut brown at the bottom right",
-    "anchor": "a slender pale weathered branch with peeling papery bark"
+    "backdrop": "deep burnt orange-brown at the top fading into pale warm cream at the bottom",
+    "backdrop_source": "Armani Stronger With You: bärnstensorange flaska"
   },
   "3": {
     "ingredients": [
@@ -64,8 +64,8 @@
         "visual": "two dark, wrinkled, slightly oily vanilla pods, one split open showing the black seed paste"
       }
     ],
-    "backdrop": "pale citrus yellow-green at the top left flowing into cool sea blue at the bottom right",
-    "anchor": "a bergamot branch with glossy green leaves and one fruit still attached"
+    "backdrop": "deep midnight navy blue at the top fading into a lighter steel blue at the bottom",
+    "backdrop_source": "Dior Sauvage: mörkblå gradientflaska; etikett: kompass på blått vatten"
   },
   "4": {
     "ingredients": [
@@ -86,8 +86,8 @@
         "visual": "a small split piece of cedar wood about the size of a matchbox, with rough fibrous reddish grain, and a few thin curled cedar shavings"
       }
     ],
-    "backdrop": "bright saffron orange at the top left flowing into deep ruby red at the bottom right",
-    "anchor": "a slender cedar branch with reddish grain and bark"
+    "backdrop": "deep ruby red at the top fading into warm golden yellow at the bottom",
+    "backdrop_source": "Baccarat Rouge 540: rött/guld; etikett: rubin med gyllene rök"
   },
   "5": {
     "ingredients": [
@@ -108,8 +108,8 @@
         "visual": "a small chunk of Virginia cedar wood about the size of a matchbox, with rough reddish-brown heartwood, bark on one side and a few cedar shavings"
       }
     ],
-    "backdrop": "soft lavender lilac at the top left flowing into dusty violet at the bottom right",
-    "anchor": "a slender weathered grey Virginia cedar branch"
+    "backdrop": "near-black charcoal at the top fading into cool silver grey at the bottom",
+    "backdrop_source": "Dior Homme Intense: svart flaska med silver"
   },
   "6": {
     "ingredients": [
@@ -130,8 +130,8 @@
         "visual": "a scatter of pale golden frankincense resin tears, cloudy and slightly translucent, with dusty matte surfaces"
       }
     ],
-    "backdrop": "pale aqua at the top left flowing into deep sea blue at the bottom right",
-    "anchor": "a slender bleached, sun-dried piece of driftwood with a salt crust"
+    "backdrop": "deep navy at the top fading into bright ocean blue at the bottom",
+    "backdrop_source": "Acqua di Giò Profumo: svart/djupblå flaska"
   },
   "7": {
     "ingredients": [
@@ -152,8 +152,8 @@
         "visual": "a few small purple violet flowers with delicate veined petals and green heart-shaped leaves"
       }
     ],
-    "backdrop": "warm sand at the top left flowing into terracotta brown at the bottom right",
-    "anchor": "a slender pale sandalwood stick with fine grain and a sawn end"
+    "backdrop": "warm caramel tan at the top fading into pale sand cream at the bottom",
+    "backdrop_source": "Le Labo Santal 33: cremefärgad etikett; etikett: sandelträ i tan"
   },
   "8": {
     "ingredients": [
@@ -174,8 +174,8 @@
         "visual": "a small split piece of cedar wood about the size of a matchbox with rough fibrous reddish grain"
       }
     ],
-    "backdrop": "cool pearl grey at the top left flowing into soft iris lilac at the bottom right",
-    "anchor": "a slender split cedar branch with reddish heartwood"
+    "backdrop": "cool graphite grey at the top fading into pale silver white at the bottom",
+    "backdrop_source": "Prada L'Homme: silver/vit flaska"
   },
   "9": {
     "ingredients": [
@@ -196,8 +196,8 @@
         "visual": "a few rolled cinnamon sticks with rough, layered bark texture and frayed ends"
       }
     ],
-    "backdrop": "warm coral pink at the top left flowing into golden yellow at the bottom right",
-    "anchor": "a bundle of thick cinnamon quills tied with natural twine"
+    "backdrop": "near-black at the top fading into deep forest green at the bottom",
+    "backdrop_source": "Creed Absolu Aventus: svart flaska; etikett: ryttare på grön mark"
   },
   "10": {
     "ingredients": [
@@ -218,7 +218,7 @@
         "visual": "two dark, wrinkled, slightly oily vanilla pods, one split lengthwise"
       }
     ],
-    "backdrop": "deep amber at the top left flowing into ember red-orange at the bottom right",
-    "anchor": "a slender charred, weathered birch branch with flaking bark"
+    "backdrop": "deep ember red-brown at the top fading into glowing amber gold at the bottom",
+    "backdrop_source": "Margiela By the Fireplace; etikett: lägereld i orange/gult"
   }
 }
