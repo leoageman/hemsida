@@ -35,18 +35,31 @@ def local_std(g: np.ndarray, r: int) -> np.ndarray:
     return np.sqrt(np.clip(m2 - m1 ** 2, 0, None)).astype(np.float32)
 
 
+def detect_shelf(a: np.ndarray, fallback: float) -> float:
+    """Hittar hyllans framkant: starkaste horisontella kanten i bildens ytterkolumner mellan 50 och 85 % av höjden."""
+    H, W, _ = a.shape
+    e = int(W * 0.08)
+    lum = np.concatenate([a[:, :e].mean(axis=2), a[:, W - e:].mean(axis=2)], axis=1).mean(axis=1)
+    lo, hi = int(H * 0.50), int(H * 0.85)
+    d = np.abs(np.diff(lum[lo:hi]))
+    if d.max() < 6:
+        return fallback
+    first = int(np.argmax(d > max(6.0, 0.4 * d.max())))   # första tydliga kanten uppifrån = hyllans överkant
+    return (lo + first - int(H * 0.004)) / H
+
+
 def smooth(path: Path, out_dir: Path, shelf: float, glow: float, quality: int) -> str:
     im = Image.open(path).convert("RGB")
     a = np.asarray(im).astype(np.float32); H, W, _ = a.shape
     edge = int(W * 0.05)
-    y_max = int(H * shelf)
+    y_max = int(H * detect_shelf(a, shelf))
     # 1) bakgrundsfärg per rad från kanterna, vertikalt utjämnad
     rows = np.concatenate([a[:y_max, :edge], a[:y_max, W - edge:]], axis=1)
     med = np.median(rows, axis=1)                       # (y_max, 3)
     bg = gaussian1d(med, sigma=H * 0.03)                # jämn vertikal gradient
     # 2) syntetisk, mjuk glöd bakom flaskan
     yy, xx = np.mgrid[0:y_max, 0:W]
-    g = np.exp(-(((xx - W / 2) / (0.32 * W)) ** 2 + ((yy - 0.55 * H) / (0.30 * H)) ** 2))
+    g = np.exp(-(((xx - W / 2) / (0.32 * W)) ** 2 + ((yy - 0.50 * H) / (0.30 * H)) ** 2))
     G = np.clip(bg[:, None, :] + glow * g[:, :, None], 0, 255)
     # 3) bakgrundsmask via flood fill från kanterna genom kantfria, släta pixlar.
     #    Motivets konturer (starka kanter) stoppar fyllningen, så färglikhet spelar ingen roll.
@@ -79,14 +92,14 @@ def smooth(path: Path, out_dir: Path, shelf: float, glow: float, quality: int) -
     out_dir.mkdir(parents=True, exist_ok=True)
     dest = out_dir / (path.stem.replace("_gpt", "") + ".jpg")
     res.save(dest, "JPEG", quality=quality, subsampling=0)
-    return f"{path.name}: ersatt {m.mean() * 100:.0f}% av ytan ovanför hyllan -> {dest.name}"
+    return f"{path.name}: hylla vid {y_max / H:.2f}, ersatt {m.mean() * 100:.0f}% av ytan ovanför -> {dest.name}"
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("images", nargs="+", type=Path)
     ap.add_argument("--out", type=Path, required=True)
-    ap.add_argument("--shelf", type=float, default=0.77, help="andel av höjden ovanför hyllan som behandlas")
+    ap.add_argument("--shelf", type=float, default=0.62, help="andel av höjden ovanför hyllan som behandlas")
     ap.add_argument("--glow", type=float, default=12.0, help="styrka på den syntetiska glöden (0 = ingen)")
     ap.add_argument("--quality", type=int, default=95)
     args = ap.parse_args()
