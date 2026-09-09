@@ -20,7 +20,7 @@
         "visual": "a few small dark splintered amberwood chips with rough fibrous grain, resin-streaked and slightly dusty"
       }
     ],
-    "backdrop": "near-black charcoal brown at the top fading into warm golden amber at the bottom",
+    "backdrop": "muted near-black charcoal brown at the top fading into soft warm cream at the bottom",
     "backdrop_source": "Azzaro Most Wanted Intense: svart/guld"
   },
   "2": {
@@ -42,7 +42,7 @@
         "visual": "two dark-brown, wrinkled, slightly oily vanilla pods, one split lengthwise showing the moist black seed paste"
       }
     ],
-    "backdrop": "deep burnt orange-brown at the top fading into pale warm cream at the bottom",
+    "backdrop": "muted burnt orange-brown at the top fading into pale warm cream at the bottom",
     "backdrop_source": "Armani Stronger With You: bärnstensorange flaska"
   },
   "3": {
@@ -64,7 +64,7 @@
         "visual": "two dark, wrinkled, slightly oily vanilla pods, one split open showing the black seed paste"
       }
     ],
-    "backdrop": "deep midnight navy blue at the top fading into a lighter steel blue at the bottom",
+    "backdrop": "muted deep navy blue at the top fading into pale cool cream at the bottom",
     "backdrop_source": "Dior Sauvage: mörkblå gradientflaska; etikett: kompass på blått vatten"
   },
   "4": {
@@ -86,7 +86,7 @@
         "visual": "a small split piece of cedar wood about the size of a matchbox, with rough fibrous reddish grain, and a few thin curled cedar shavings"
       }
     ],
-    "backdrop": "deep ruby red at the top fading into warm golden yellow at the bottom",
+    "backdrop": "deep muted oxblood brick red at the top fading into soft warm peach cream at the bottom",
     "backdrop_source": "Baccarat Rouge 540: rött/guld; etikett: rubin med gyllene rök"
   },
   "5": {
@@ -108,7 +108,7 @@
         "visual": "a small chunk of Virginia cedar wood about the size of a matchbox, with rough reddish-brown heartwood, bark on one side and a few cedar shavings"
       }
     ],
-    "backdrop": "near-black charcoal at the top fading into cool silver grey at the bottom",
+    "backdrop": "near-black warm brown at the top fading into soft golden beige at the bottom",
     "backdrop_source": "Dior Homme Intense: svart flaska med silver"
   },
   "6": {
@@ -130,7 +130,7 @@
         "visual": "a scatter of pale golden frankincense resin tears, cloudy and slightly translucent, with dusty matte surfaces"
       }
     ],
-    "backdrop": "deep navy at the top fading into bright ocean blue at the bottom",
+    "backdrop": "dark charcoal grey at the top fading into pale silver white at the bottom",
     "backdrop_source": "Acqua di Giò Profumo: svart/djupblå flaska"
   },
   "7": {
@@ -152,7 +152,7 @@
         "visual": "a few small purple violet flowers with delicate veined petals and green heart-shaped leaves"
       }
     ],
-    "backdrop": "warm caramel tan at the top fading into pale sand cream at the bottom",
+    "backdrop": "muted sage green at the top fading into warm cream at the bottom",
     "backdrop_source": "Le Labo Santal 33: cremefärgad etikett; etikett: sandelträ i tan"
   },
   "8": {
@@ -174,7 +174,7 @@
         "visual": "a small split piece of cedar wood about the size of a matchbox with rough fibrous reddish grain"
       }
     ],
-    "backdrop": "cool graphite grey at the top fading into pale silver white at the bottom",
+    "backdrop": "dark taupe brown at the top fading into warm golden cream at the bottom",
     "backdrop_source": "Prada L'Homme: silver/vit flaska"
   },
   "9": {
@@ -196,7 +196,7 @@
         "visual": "a few rolled cinnamon sticks with rough, layered bark texture and frayed ends"
       }
     ],
-    "backdrop": "near-black at the top fading into deep forest green at the bottom",
+    "backdrop": "muted deep forest green at the top fading into pale cream at the bottom",
     "backdrop_source": "Creed Absolu Aventus: svart flaska; etikett: ryttare på grön mark"
   },
   "10": {
@@ -218,7 +218,447 @@
         "visual": "two dark, wrinkled, slightly oily vanilla pods, one split lengthwise"
       }
     ],
-    "backdrop": "deep ember red-brown at the top fading into glowing amber gold at the bottom",
+    "backdrop": "muted ember red-brown at the top fading into soft amber cream at the bottom",
     "backdrop_source": "Margiela By the Fireplace; etikett: lägereld i orange/gult"
+  },
+  "11": {
+    "backdrop": "soft pearl grey at the top fading into warm cream at the bottom",
+    "backdrop_source": "Parfums de Marly Pegasus: vit flaska med silver",
+    "ingredients": [
+      {
+        "note": "Heliotrop",
+        "visual": "a small cluster of heliotrope flowers, tiny pale lilac-white blossoms with soft green leaves"
+      },
+      {
+        "note": "Bittermandel",
+        "visual": "a few bitter almonds, some in their rough pitted shells and some shelled with papery brown skin"
+      },
+      {
+        "note": "Lavendel",
+        "visual": "two fresh lavender sprigs with slightly wilted purple flower spikes and grey-green leaves"
+      },
+      {
+        "note": "Vanilj",
+        "visual": "two dark, wrinkled, slightly oily vanilla pods, one split lengthwise showing the black seed paste"
+      }
+    ]
+  },
+  "12": {
+    "backdrop": "muted dove grey-blue at the top fading into pale cream at the bottom",
+    "backdrop_source": "Parfums de Marly Percival: vit/silver flaska",
+    "ingredients": [
+      {
+        "note": "Lavendel",
+        "visual": "fresh lavender sprigs with purple flower spikes and grey-green leaves"
+      },
+      {
+        "note": "Mandarin",
+        "visual": "a small mandarin with dimpled orange peel, one half peeled with a curl of peel and glossy segments"
+      },
+      {
+        "note": "Viol",
+        "visual": "a few small purple violet flowers with delicate veined petals and green heart-shaped leaves"
+      },
+      {
+        "note": "Kanel",
+        "visual": "a few rolled cinnamon sticks with rough layered bark texture and frayed ends"
+      }
+    ]
+  },
+  "13": {
+    "backdrop": "muted moss green at the top fading into pale cream at the bottom",
+    "backdrop_source": "Parfums de Marly Greenley: grön flaska",
+    "ingredients": [
+      {
+        "note": "Grönt äpple",
+        "visual": "a crisp green apple with faint speckles and one wedge cut out showing the pale flesh and seeds"
+      },
+      {
+        "note": "Kalabrisk bergamott",
+        "visual": "a green-yellow bergamot with bumpy pitted rind and one half cut open showing the pale segmented flesh"
+      },
+      {
+        "note": "Cederträ",
+        "visual": "a small split piece of cedar wood with rough fibrous reddish grain and a few curled shavings"
+      },
+      {
+        "note": "Viol",
+        "visual": "a few small purple violet flowers with delicate veined petals and green leaves"
+      }
+    ]
+  },
+  "14": {
+    "backdrop": "muted warm ivory gold at the top fading into pale cream at the bottom",
+    "backdrop_source": "Creed Sublime Vanille: vit/cream flaska med guld",
+    "ingredients": [
+      {
+        "note": "Citron",
+        "visual": "a fresh lemon with dimpled yellow rind and one half cut open showing glistening segments"
+      },
+      {
+        "note": "Vanilj",
+        "visual": "three dark, wrinkled, oily vanilla pods, one split lengthwise showing the black seed paste"
+      },
+      {
+        "note": "Jasmin",
+        "visual": "a few fresh white jasmine flowers with slightly translucent petals and glossy dark-green leaves"
+      },
+      {
+        "note": "Tonkaböna",
+        "visual": "a few dark wrinkled tonka beans with a matte, deeply furrowed surface"
+      }
+    ]
+  },
+  "15": {
+    "backdrop": "muted apricot orange at the top fading into pale cream at the bottom",
+    "backdrop_source": "Louis Vuitton Afternoon Swim: orange/gul flaska",
+    "ingredients": [
+      {
+        "note": "Mandarin",
+        "visual": "a small mandarin with dimpled peel, one half peeled with a curl of peel and glossy segments"
+      },
+      {
+        "note": "Siciliansk apelsin",
+        "visual": "a blood orange cut in half showing deep red-orange segments with glistening juice vesicles"
+      },
+      {
+        "note": "Bergamott",
+        "visual": "a green-yellow bergamot with bumpy pitted rind and a glossy leaf"
+      },
+      {
+        "note": "Ingefära",
+        "visual": "a knobbly fresh ginger root with papery tan skin, one end sliced showing the fibrous pale yellow interior"
+      }
+    ]
+  },
+  "16": {
+    "backdrop": "muted teal blue at the top fading into pale cream at the bottom",
+    "backdrop_source": "Louis Vuitton L'Immensité: blå-turkos flaska",
+    "ingredients": [
+      {
+        "note": "Grapefrukt",
+        "visual": "a pink grapefruit half lying flat, showing juicy pink segments with white pith"
+      },
+      {
+        "note": "Ingefära",
+        "visual": "a knobbly fresh ginger root with papery tan skin, one end sliced showing the pale yellow interior"
+      },
+      {
+        "note": "Rosmarin",
+        "visual": "two fresh rosemary sprigs with needle-like green leaves and woody stems"
+      },
+      {
+        "note": "Salvia",
+        "visual": "a few fresh sage leaves, velvety grey-green with fine hairs and visible veins"
+      }
+    ]
+  },
+  "17": {
+    "backdrop": "muted sky blue at the top fading into pale cream at the bottom",
+    "backdrop_source": "Louis Vuitton Imagination: ljusblå/vit flaska",
+    "ingredients": [
+      {
+        "note": "Citron",
+        "visual": "a fresh lemon with dimpled yellow rind, one half cut open showing glistening segments"
+      },
+      {
+        "note": "Kalabrisk bergamott",
+        "visual": "a green-yellow bergamot with bumpy pitted rind and a glossy leaf"
+      },
+      {
+        "note": "Nigeriansk ingefära",
+        "visual": "a knobbly fresh ginger root with papery tan skin, one end sliced showing the pale yellow interior"
+      },
+      {
+        "note": "Kinesiskt svart te",
+        "visual": "a small loose heap of dried black tea leaves, dark twisted leaves with a few loose fragments"
+      }
+    ]
+  },
+  "18": {
+    "backdrop": "near-black warm brown at the top fading into soft warm cream at the bottom",
+    "backdrop_source": "Louis Vuitton Ombre Nomade: mörk/svart flaska",
+    "ingredients": [
+      {
+        "note": "Agarträ (Oud)",
+        "visual": "a few dark, dense, resin-streaked oud (agarwood) chips with rough splintered grain"
+      },
+      {
+        "note": "Ros",
+        "visual": "one deep red rose in full bloom with velvety layered petals and a few fallen petals"
+      },
+      {
+        "note": "Hallon",
+        "visual": "a small cluster of fresh raspberries with soft fuzzy drupelets and a green leaf"
+      },
+      {
+        "note": "Saffran",
+        "visual": "a small loose pile of deep red saffron threads, thin and wiry with lighter orange tips"
+      }
+    ]
+  },
+  "19": {
+    "backdrop": "muted aqua green at the top fading into pale cream at the bottom",
+    "backdrop_source": "Louis Vuitton Pacific Chill: grön-blå flaska",
+    "ingredients": [
+      {
+        "note": "Citron",
+        "visual": "a fresh lemon with dimpled yellow rind, one half cut open showing glistening segments"
+      },
+      {
+        "note": "Mynta",
+        "visual": "a few fresh mint sprigs with bright green serrated leaves and visible veins"
+      },
+      {
+        "note": "Aprikos",
+        "visual": "two ripe apricots with soft velvety orange skin, one halved showing the golden flesh and stone"
+      },
+      {
+        "note": "Fikon",
+        "visual": "a ripe purple fig, one cut open showing the pink seeded flesh"
+      }
+    ]
+  },
+  "20": {
+    "backdrop": "muted deep plum purple at the top fading into pale cream at the bottom",
+    "backdrop_source": "Louis Vuitton Stellar Times: mörklila flaska",
+    "ingredients": [
+      {
+        "note": "Apelsinblomma",
+        "visual": "fresh white orange blossom flowers with slightly translucent petals, yellow stamens and glossy green leaves"
+      },
+      {
+        "note": "Amberträ (harts)",
+        "visual": "a few translucent golden amber resin chunks with rough fractured surfaces and internal cracks"
+      },
+      {
+        "note": "Amberträ (trä)",
+        "visual": "a few small dark splintered amberwood chips with rough fibrous grain"
+      },
+      {
+        "note": "Tränoter",
+        "visual": "a small split piece of pale wood with visible grain and a few thin curled shavings"
+      }
+    ]
+  },
+  "21": {
+    "backdrop": "muted orange gold at the top fading into pale cream at the bottom",
+    "backdrop_source": "Xerjoff Erba Pura: orange/guld",
+    "ingredients": [
+      {
+        "note": "Siciliansk apelsin",
+        "visual": "a blood orange cut in half showing deep red-orange segments with glistening juice vesicles"
+      },
+      {
+        "note": "Sötmandarin",
+        "visual": "a small mandarin with dimpled peel, one half peeled with a curl of peel and glossy segments"
+      },
+      {
+        "note": "Vanilj",
+        "visual": "two dark, wrinkled, oily vanilla pods, one split lengthwise"
+      },
+      {
+        "note": "Amber",
+        "visual": "a few translucent honey-orange amber resin chunks with internal cracks and light glowing through them"
+      }
+    ]
+  },
+  "22": {
+    "backdrop": "muted deep amber brown at the top fading into warm cream at the bottom",
+    "backdrop_source": "Parfums de Marly Althaïr: bärnstensbrun flaska med guld",
+    "ingredients": [
+      {
+        "note": "Kanel",
+        "visual": "a few rolled cinnamon sticks with rough layered bark texture and frayed ends"
+      },
+      {
+        "note": "Kardemumma",
+        "visual": "a loose scatter of whole green cardamom pods with papery ridged husks, two split open spilling dark seeds"
+      },
+      {
+        "note": "Apelsinblomma",
+        "visual": "fresh white orange blossom flowers with yellow stamens and glossy green leaves"
+      },
+      {
+        "note": "Bourbonvanilj",
+        "visual": "three dark, wrinkled, oily vanilla pods, one split lengthwise showing the black seed paste"
+      }
+    ]
+  },
+  "23": {
+    "backdrop": "muted cognac amber at the top fading into warm cream at the bottom",
+    "backdrop_source": "By Kilian Angels' Share: cognacfärgad flaska",
+    "ingredients": [
+      {
+        "note": "Cognac",
+        "visual": "a small crystal tumbler with a finger of amber cognac catching the light"
+      },
+      {
+        "note": "Kanel",
+        "visual": "a few rolled cinnamon sticks with rough layered bark texture"
+      },
+      {
+        "note": "Tonkaböna",
+        "visual": "a few dark wrinkled tonka beans with a matte, deeply furrowed surface"
+      },
+      {
+        "note": "Kanderad Mandel",
+        "visual": "a small pile of candied almonds with a crackled sugar coating in caramel tones"
+      }
+    ]
+  },
+  "24": {
+    "backdrop": "muted midnight navy at the top fading into pale cream at the bottom",
+    "backdrop_source": "Parfums de Marly Layton: mörkblå flaska med guld",
+    "ingredients": [
+      {
+        "note": "Äpple",
+        "visual": "a crisp red-green apple with faint speckles and one wedge cut out showing the pale flesh"
+      },
+      {
+        "note": "Lavendel",
+        "visual": "fresh lavender sprigs with purple flower spikes and grey-green leaves"
+      },
+      {
+        "note": "Vanilj",
+        "visual": "two dark, wrinkled, oily vanilla pods, one split lengthwise"
+      },
+      {
+        "note": "Kardemumma",
+        "visual": "whole green cardamom pods with papery ridged husks and a few loose dark seeds"
+      }
+    ]
+  },
+  "25": {
+    "backdrop": "muted turquoise at the top fading into pale cream at the bottom",
+    "backdrop_source": "Tom Ford Neroli Portofino: turkos flaska",
+    "ingredients": [
+      {
+        "note": "Bergamott",
+        "visual": "a green-yellow bergamot with bumpy pitted rind and one half cut open"
+      },
+      {
+        "note": "Citron",
+        "visual": "a fresh lemon with dimpled yellow rind and one half cut open showing glistening segments"
+      },
+      {
+        "note": "Neroli",
+        "visual": "fresh white orange blossom (neroli) flowers with yellow stamens and glossy green leaves"
+      },
+      {
+        "note": "Rosmarin",
+        "visual": "two fresh rosemary sprigs with needle-like green leaves and woody stems"
+      }
+    ]
+  },
+  "26": {
+    "backdrop": "near-black at the top fading into muted warm grey cream at the bottom",
+    "backdrop_source": "Initio Side Effect: svart flaska",
+    "ingredients": [
+      {
+        "note": "tobak",
+        "visual": "a few dried tobacco leaves, large, veined and golden brown, one loosely rolled"
+      },
+      {
+        "note": "Kanel",
+        "visual": "a few rolled cinnamon sticks with rough layered bark texture"
+      },
+      {
+        "note": "Saffran",
+        "visual": "a small loose pile of deep red saffron threads with lighter orange tips"
+      },
+      {
+        "note": "Sandelträ",
+        "visual": "a small pale cream-yellow piece of sandalwood with fine visible grain and a few thin shavings"
+      }
+    ]
+  },
+  "27": {
+    "backdrop": "muted deep red at the top fading into warm cream at the bottom",
+    "backdrop_source": "SHL 777 God of Fire: röd/guld flaska",
+    "ingredients": [
+      {
+        "note": "Mango",
+        "visual": "a ripe mango with red-orange blushed skin, one cheek cut and scored showing golden flesh"
+      },
+      {
+        "note": "Ginger",
+        "visual": "a knobbly fresh ginger root with papery tan skin, one end sliced showing the pale yellow interior"
+      },
+      {
+        "note": "Lemon",
+        "visual": "a fresh lemon with dimpled yellow rind, one half cut open"
+      },
+      {
+        "note": "Röda bär",
+        "visual": "a small cluster of glossy red currants on the stem with a few raspberries"
+      }
+    ]
+  },
+  "28": {
+    "backdrop": "soft milky white at the top fading into warm cream at the bottom",
+    "backdrop_source": "Giardini di Toscana Bianco Latte: vit flaska",
+    "ingredients": [
+      {
+        "note": "Karamell",
+        "visual": "soft golden-brown caramel toffee cubes with a slightly glossy uneven surface, one wrapped in clear cellophane"
+      },
+      {
+        "note": "Honung",
+        "visual": "a small piece of honeycomb dripping golden honey, glossy and translucent"
+      },
+      {
+        "note": "Vanilj",
+        "visual": "two dark, wrinkled, oily vanilla pods, one split lengthwise"
+      },
+      {
+        "note": "Kumarin",
+        "visual": "a few dark wrinkled tonka beans with a matte, deeply furrowed surface"
+      }
+    ]
+  },
+  "29": {
+    "backdrop": "muted coral pink at the top fading into pale cream at the bottom",
+    "backdrop_source": "Maison Crivelli Oud Maracujá: vit flaska med rosa-orange etikett",
+    "ingredients": [
+      {
+        "note": "Passionsfrukt",
+        "visual": "a wrinkled purple passion fruit cut in half showing the glossy orange pulp and black seeds"
+      },
+      {
+        "note": "Turkisk Ros",
+        "visual": "one pink Damask rose in full bloom with velvety layered petals"
+      },
+      {
+        "note": "Saffran",
+        "visual": "a small loose pile of deep red saffron threads with lighter orange tips"
+      },
+      {
+        "note": "Agarträ (Oud)",
+        "visual": "a few dark, dense, resin-streaked oud (agarwood) chips with rough splintered grain"
+      }
+    ]
+  },
+  "30": {
+    "backdrop": "near-black at the top fading into muted warm gold cream at the bottom",
+    "backdrop_source": "Jean Paul Gaultier Le Male Elixir: svart/guld flaska",
+    "ingredients": [
+      {
+        "note": "Lavendel",
+        "visual": "fresh lavender sprigs with purple flower spikes and grey-green leaves"
+      },
+      {
+        "note": "Mynta",
+        "visual": "a few fresh mint sprigs with bright green serrated leaves"
+      },
+      {
+        "note": "Honung",
+        "visual": "a small piece of honeycomb dripping golden honey, glossy and translucent"
+      },
+      {
+        "note": "Tobak",
+        "visual": "a few dried tobacco leaves, large, veined and golden brown, one loosely rolled"
+      }
+    ]
   }
 }
