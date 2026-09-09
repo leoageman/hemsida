@@ -56,7 +56,7 @@ REALISM: every ingredient is photographed with macro-level detail and looks like
 
 FRAMING: the whole arrangement, bottle and ingredients together, sits inside the central 75% of the frame; the outer 12% on every side is empty white background. No object touches or crosses the picture edge: make an ingredient smaller or move it inward rather than letting it reach the edge. No text, captions, extra props or hands. Square 1:1, high-end product photography."""
 
-STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series: match its camera height, angle and distance exactly, so the bottle has the same size and the same position in the frame as in image 2, with the same lighting and shadow direction, as if shot in the same session without touching the camera. Background must be pure white and every ingredient must stay well inside the frame, as described below."
+STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series showing a DIFFERENT fragrance: match only its camera height, angle and distance, so the bottle has the same size and position in the frame, with the same lighting and shadow direction, as if shot in the same session without touching the camera. Never copy the label, label text, illustration or liquid colour from image 2; those come from image 1 only. Background must be pure white and every ingredient must stay well inside the frame, as described below."
 
 
 EDITORIAL_TEMPLATE = """Edit this image. Image 1 is a product photo of a 50 ml perfume bottle from One Bold Chemist.{style_ref}
@@ -73,7 +73,7 @@ Everything is at true real-world scale relative to the 10 cm bottle: large produ
 
 LIGHT: one large soft key light from above and slightly left, warm and flattering, gentle fill from the right, soft shadows on the shelf, a subtle rim of backdrop colour in the glass and liquid. Photorealistic and hyper-detailed: visible fibres, cracks, pores, moisture and translucency on every ingredient, fine grain, tack sharp. No text, no captions, no extra props, no hands. Square 1:1, high-end campaign photography."""
 
-EDITORIAL_STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series: match its camera height and distance, bottle size and position, shelf position, lighting and reflection exactly, so this image looks shot in the same session; only the backdrop colours and the ingredients differ, as described below."
+EDITORIAL_STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series showing a DIFFERENT fragrance: match only its camera height and distance, bottle size and position, shelf position, lighting and reflection, so this image looks shot in the same session. Never copy the label, the label text, the illustration or the liquid colour from image 2; the bottle, label text and illustration must come from image 1 only, and the backdrop colours and ingredients are as described below."
 
 FLOW_TEMPLATE = """Product still life of the exact perfume bottle from the reference image: the same 50 ml glass bottle, brushed silver cap, liquid colour and label with the text "{label}", "extrait de parfum" and "one bold chemist" and the same small halftone illustration, reproduced exactly with no changes to the label. The bottle stands centred on a pure white surface, about 60% of the frame height, seen from a slightly elevated angle.
 

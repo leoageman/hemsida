@@ -64,6 +64,19 @@ python3 scripts/normalize.py output/*_noter_gpt.png --out output/final --cap-top
 kapsyltoppen hamnar på 15 % av höjden. `--fit` väljer största gemensamma flaskstorlek som ryms i alla
 bilder utan att något klipps; för att nya bilder ska matcha de här tio, använd i stället `--cap-width 0.134`.
 
+## Editorial-stil (gradientbakgrund + glashylla)
+
+`--style editorial` ger kampanjbilder: flaskan stor på en glashylla, ingredienserna tätt kring foten och
+en vertikal gradientbakgrund i originalparfymens eller etikettens färger (`backdrop` i `data/selection.json`,
+motivering i `backdrop_source`). Leveransen ligger i `output/final_editorial/`.
+
+```bash
+python3 scripts/generate.py --provider openai --model gpt-image-2 --size 2K --style editorial --style-ref reference/style-ref-editorial.jpg --skus 1-10
+```
+
+Stilreferensen är Bachelder 4.0. OBS: referensen visar en annan doft, och prompten säger uttryckligen att
+etikettext, illustration och vätskefärg aldrig får kopieras från den. Kontrollera ändå etiketten på varje bild.
+
 ## Manuellt i Gemini-appen / AI Studio
 
 1. Öppna `prompts/<nr>_<namn>.txt` och kopiera texten.
