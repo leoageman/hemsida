@@ -59,6 +59,22 @@ FRAMING: the whole arrangement, bottle and ingredients together, sits inside the
 STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series: match its camera height, angle and distance exactly, so the bottle has the same size and the same position in the frame as in image 2, with the same lighting and shadow direction, as if shot in the same session without touching the camera. Background must be pure white and every ingredient must stay well inside the frame, as described below."
 
 
+EDITORIAL_TEMPLATE = """Edit this image. Image 1 is a product photo of a 50 ml perfume bottle from One Bold Chemist.{style_ref}
+
+BOTTLE: keep the bottle exactly as in image 1: the same clear glass bottle and liquid colour, and the same cap: a smooth, light, matte silver aluminium cap, pale and evenly lit with only a soft gentle gradient and a slightly rounded top edge, no dark bands, no heavy brushed streaks. The same label with the exact text "{label}", "extrait de parfum" and "one bold chemist" and the same small halftone illustration. Do not redraw, rotate, tilt or alter the label; it is opaque printed paper and nothing shows through it.
+
+SCENE: a warm editorial still life in the style of a modern fragrance campaign. The bottle stands upright, centred, on a polished mirror-like glass shelf that runs horizontally across the entire frame at about 62% of the image height. The shelf's front edge reads as a thin bright line. Below the shelf the backdrop simply continues, and the glass shows only a faint, soft reflection of the bottle and ingredients, about a third as strong as the objects themselves, fading out quickly downward, so the lower part of the image stays light and airy. Behind and below the shelf is a seamless studio backdrop with a smooth, bright, pastel two-tone gradient: {backdrop}. The gradient is brightest at the top left and deepens gently toward the bottom right, perfectly smooth, luminous and light overall, never dark or muddy, with no texture, no horizon line other than the shelf, and no visible equipment.
+
+CAMERA: straight-on at eye level with the shelf, so the shelf is a thin line and the reflection is fully visible below it; normal 85 mm lens, no tilt, the bottle not rotated and the label facing the camera squarely. The bottle is small in the frame, leaving generous empty backdrop above it: the top of its cap sits about 30% below the top edge and its base stands on the shelf line at about 62%, so the bottle spans roughly a third of the image height, horizontally centred. This camera height, angle and distance is identical for every image in the series.
+
+ARRANGEMENT: a low, wide, sparse horizontal composition of the fragrance's raw ingredients laid along the shelf on both sides of the bottle, spanning most of the width but staying inside the frame with a clear margin to the left and right edges, with air between the pieces. {anchor}, slender and no thicker than the bottle is wide, lies horizontally behind and beside the bottle as the main structure, and these few pieces are placed in front of it, leaning against it or beside it:
+{ingredients}
+Everything is at true real-world scale relative to the 10 cm bottle; large items stay large and small items stay small. Nothing covers the label, nothing floats: every object stands on or rests against the shelf and is reflected in it.
+
+LIGHT: one large soft warm key light from the upper left with gentle fill from the right, soft directional shadows on the shelf, and a subtle glow of the backdrop colour in the glass. Photorealistic and hyper-detailed: visible fibres, cracks, pores, moisture and translucency on every ingredient, fine grain, tack sharp. No text, no captions, no extra props, no hands. Square 1:1, high-end campaign photography."""
+
+EDITORIAL_STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series: match its camera height and distance, shelf position, lighting, reflection and backdrop treatment exactly, so this image looks shot in the same session; only the backdrop colours and the ingredients differ, as described below."
+
 FLOW_TEMPLATE = """Product still life of the exact perfume bottle from the reference image: the same 50 ml glass bottle, brushed silver cap, liquid colour and label with the text "{label}", "extrait de parfum" and "one bold chemist" and the same small halftone illustration, reproduced exactly with no changes to the label. The bottle stands centred on a pure white surface, about 60% of the frame height, seen from a slightly elevated angle.
 
 Around it, spread out as four separate small groups with clear white space between them, mostly in front of and beside the bottle, nothing piled up and nothing hiding the label:
@@ -93,6 +109,15 @@ def build_prompt(product: dict, ingredients: list[dict], style_ref: bool = False
     label = f"{product['name'].upper()} {product['number']}.0"
     lines = "\n".join(f"{i}. {ing['visual']} ({ing['note']})" for i, ing in enumerate(ingredients, 1))
     return PROMPT_TEMPLATE.format(label=label, ingredients=lines, style_ref=STYLE_REF_SENTENCE if style_ref else "")
+
+
+def build_editorial_prompt(product: dict, sel: dict, style_ref: bool = False) -> str:
+    label = f"{product['name'].upper()} {product['number']}.0"
+    lines = "\n".join(f"{i}. {ing['visual']} ({ing['note']})" for i, ing in enumerate(sel["ingredients"], 1))
+    return EDITORIAL_TEMPLATE.format(
+        label=label, ingredients=lines, backdrop=sel["backdrop"], anchor=sel["anchor"],
+        style_ref=EDITORIAL_STYLE_REF_SENTENCE if style_ref else "",
+    )
 
 
 def build_flow_prompt(product: dict, ingredients: list[dict]) -> str:
@@ -239,6 +264,7 @@ def main() -> None:
     ap.add_argument("--force", action="store_true", help="generera om även om output-filen redan finns")
     ap.add_argument("--sleep", type=float, default=2.0, help="sekunder mellan API-anrop")
     ap.add_argument("--list-models", action="store_true", help="lista modeller som kan generera bilder och avsluta")
+    ap.add_argument("--style", default="studio", choices=["studio", "editorial"], help="studio = vit studiobild (default), editorial = gradientbakgrund + spegelhylla")
     ap.add_argument("--style-ref", type=Path, default=None, help="färdig bild som stilreferens (skickas som bild 2 till Gemini), t.ex. output/04_bachelder_noter.jpg")
     ap.add_argument("--fetch-bottles", action="store_true", help="ladda bara ner flaskbilder från Shopify till reference/bottles/ (ingen generering)")
     args = ap.parse_args()
@@ -272,7 +298,7 @@ def main() -> None:
     client = None if (args.dry_run or args.provider == "openai") else get_client()
     if args.provider == "openai" and not args.dry_run:
         openai_key()
-    suffix = "_noter_gpt" if args.provider == "openai" else "_noter"
+    suffix = ("_editorial" if args.style == "editorial" else "_noter") + ("_gpt" if args.provider == "openai" else "")
     failures: list[str] = []
 
     for n in numbers:
@@ -284,8 +310,13 @@ def main() -> None:
         if len(ingredients) != 4:
             print(f"  OBS: {product['title']} har {len(ingredients)} ingredienser i urvalet (förväntat 4)")
         stem = f"{product['number']:02d}_{slugify(product['name'])}"
-        prompt = build_prompt(product, ingredients, style_ref=bool(args.style_ref))
-        (PROMPTS / f"{stem}.txt").write_text(prompt + "\n", encoding="utf-8")
+        if args.style == "editorial":
+            prompt = build_editorial_prompt(product, selection[n], style_ref=bool(args.style_ref))
+            (PROMPTS / "editorial").mkdir(exist_ok=True)
+            (PROMPTS / "editorial" / f"{stem}.txt").write_text(prompt + "\n", encoding="utf-8")
+        else:
+            prompt = build_prompt(product, ingredients, style_ref=bool(args.style_ref))
+            (PROMPTS / f"{stem}.txt").write_text(prompt + "\n", encoding="utf-8")
         FLOW_PROMPTS.mkdir(exist_ok=True)
         (FLOW_PROMPTS / f"{stem}.txt").write_text(build_flow_prompt(product, ingredients) + "\n", encoding="utf-8")
         print(f"{product['title']}: {', '.join(i['note'] for i in ingredients)}")

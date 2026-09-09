@@ -19,7 +19,9 @@
         "note": "Amberträ (trä)",
         "visual": "a few small dark splintered amberwood chips with rough fibrous grain, resin-streaked and slightly dusty"
       }
-    ]
+    ],
+    "backdrop": "warm caramel gold at the top left flowing into deep amber orange at the bottom right",
+    "anchor": "a slender, dry, resin-streaked piece of dark amberwood driftwood"
   },
   "2": {
     "ingredients": [
@@ -39,7 +41,9 @@
         "note": "Vanilj",
         "visual": "two dark-brown, wrinkled, slightly oily vanilla pods, one split lengthwise showing the moist black seed paste"
       }
-    ]
+    ],
+    "backdrop": "soft creamy beige at the top left flowing into warm chestnut brown at the bottom right",
+    "anchor": "a slender pale weathered branch with peeling papery bark"
   },
   "3": {
     "ingredients": [
@@ -59,7 +63,9 @@
         "note": "Madagaskisk Vanilj",
         "visual": "two dark, wrinkled, slightly oily vanilla pods, one split open showing the black seed paste"
       }
-    ]
+    ],
+    "backdrop": "pale citrus yellow-green at the top left flowing into cool sea blue at the bottom right",
+    "anchor": "a bergamot branch with glossy green leaves and one fruit still attached"
   },
   "4": {
     "ingredients": [
@@ -79,7 +85,9 @@
         "note": "Cederträ",
         "visual": "a small split piece of cedar wood about the size of a matchbox, with rough fibrous reddish grain, and a few thin curled cedar shavings"
       }
-    ]
+    ],
+    "backdrop": "bright saffron orange at the top left flowing into deep ruby red at the bottom right",
+    "anchor": "a slender cedar branch with reddish grain and bark"
   },
   "5": {
     "ingredients": [
@@ -99,7 +107,9 @@
         "note": "Virginia-ceder",
         "visual": "a small chunk of Virginia cedar wood about the size of a matchbox, with rough reddish-brown heartwood, bark on one side and a few cedar shavings"
       }
-    ]
+    ],
+    "backdrop": "soft lavender lilac at the top left flowing into dusty violet at the bottom right",
+    "anchor": "a slender weathered grey Virginia cedar branch"
   },
   "6": {
     "ingredients": [
@@ -119,7 +129,9 @@
         "note": "Rökelse",
         "visual": "a scatter of pale golden frankincense resin tears, cloudy and slightly translucent, with dusty matte surfaces"
       }
-    ]
+    ],
+    "backdrop": "pale aqua at the top left flowing into deep sea blue at the bottom right",
+    "anchor": "a slender bleached, sun-dried piece of driftwood with a salt crust"
   },
   "7": {
     "ingredients": [
@@ -139,7 +151,9 @@
         "note": "Viol",
         "visual": "a few small purple violet flowers with delicate veined petals and green heart-shaped leaves"
       }
-    ]
+    ],
+    "backdrop": "warm sand at the top left flowing into terracotta brown at the bottom right",
+    "anchor": "a slender pale sandalwood stick with fine grain and a sawn end"
   },
   "8": {
     "ingredients": [
@@ -159,7 +173,9 @@
         "note": "Cederträ",
         "visual": "a small split piece of cedar wood about the size of a matchbox with rough fibrous reddish grain"
       }
-    ]
+    ],
+    "backdrop": "cool pearl grey at the top left flowing into soft iris lilac at the bottom right",
+    "anchor": "a slender split cedar branch with reddish heartwood"
   },
   "9": {
     "ingredients": [
@@ -179,7 +195,9 @@
         "note": "Kanel",
         "visual": "a few rolled cinnamon sticks with rough, layered bark texture and frayed ends"
       }
-    ]
+    ],
+    "backdrop": "warm coral pink at the top left flowing into golden yellow at the bottom right",
+    "anchor": "a bundle of thick cinnamon quills tied with natural twine"
   },
   "10": {
     "ingredients": [
@@ -199,6 +217,8 @@
         "note": "Vanilj",
         "visual": "two dark, wrinkled, slightly oily vanilla pods, one split lengthwise"
       }
-    ]
+    ],
+    "backdrop": "deep amber at the top left flowing into ember red-orange at the bottom right",
+    "anchor": "a slender charred, weathered birch branch with flaking bark"
   }
 }
