@@ -74,8 +74,11 @@ motivering i `backdrop_source`). Leveransen ligger i `output/final_editorial/`.
 python3 scripts/generate.py --provider openai --model gpt-image-2 --size 2K --style editorial --style-ref reference/style-ref-editorial.jpg --skus 1-10
 ```
 
-Stilreferensen är Bachelder 4.0. OBS: referensen visar en annan doft, och prompten säger uttryckligen att
-etikettext, illustration och vätskefärg aldrig får kopieras från den. Kontrollera ändå etiketten på varje bild.
+Stilreferensen är Bachelder 4.0 (v3: kapsyl med krage och glasskuldra, dämpad gradient med cream nedtill).
+OBS: referensen visar en annan doft, och prompten säger uttryckligen att etikettext, illustration och
+vätskefärg aldrig får kopieras från den, och att namnet ska återges bokstav för bokstav. Kontrollera ändå
+etiketten på varje bild. Känt: Shopifys flaskbild för Macquer 29.0 har etiketten "MAQCUER", så den
+genererade bilden återger det.
 
 ## Manuellt i Gemini-appen / AI Studio
 

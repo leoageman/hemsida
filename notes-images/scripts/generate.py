@@ -61,7 +61,7 @@ STYLE_REF_SENTENCE = " Image 2 is a finished example from the same series showin
 
 EDITORIAL_TEMPLATE = """Edit this image. Image 1 is a product photo of a 50 ml perfume bottle from One Bold Chemist.{style_ref}
 
-BOTTLE: keep the bottle exactly as in image 1 with its exact proportions: a straight cylindrical clear glass body, and on top a tall brushed light-silver aluminium cap that is clearly narrower than the glass body (about two thirds of its width) and about a quarter of the bottle's total height. Below the cap sits a narrow polished silver collar ring, and between that collar and the glass body a thin band of clear glass shoulder is visible, so the cap never sits directly on the body. Same liquid colour as image 1. The same label with the exact text "{label}", "extrait de parfum" and "one bold chemist" and the same small halftone illustration. Do not redraw, rotate, tilt or alter the label; it is opaque printed paper and nothing shows through it.
+BOTTLE: keep the bottle exactly as in image 1 with its exact proportions: a straight cylindrical clear glass body, and on top a tall brushed light-silver aluminium cap that is clearly narrower than the glass body (about two thirds of its width) and about a quarter of the bottle's total height. Below the cap sits a narrow polished silver collar ring, and between that collar and the glass body a thin band of clear glass shoulder is visible, so the cap never sits directly on the body. Same liquid colour as image 1. The same label with the exact text "{label}" (spelled letter by letter: {label_spelled}), "extrait de parfum" and "one bold chemist" and the same small halftone illustration. Reproduce every letter of the name exactly as in image 1, in the same font; never substitute, add or drop a letter. Do not redraw, rotate, tilt or alter the label; it is opaque printed paper and nothing shows through it.
 
 SCENE: a premium fragrance campaign still life. The bottle stands upright and centred on a thick glass shelf. The shelf's top surface is polished and shows a faint, soft reflection of the bottle and ingredients; its front edge is visible as a horizontal band of pale green-tinted glass running across the whole width at about 80% of the image height, and below the shelf the backdrop simply continues. Behind everything is a seamless studio backdrop with a smooth vertical two-tone gradient: {backdrop}. The colours are muted, soft and low in saturation, like a hand-painted canvas backdrop, never vivid or neon; the top half keeps a deep, rich version of the colour and the lower third is always a light cream or pale tone so the shelf and ingredients sit on a pale ground; a very subtle warm glow sits behind the bottle, never a bright white halo. Perfectly smooth, no texture, no horizon other than the shelf, no visible equipment.
 
@@ -114,8 +114,9 @@ def build_prompt(product: dict, ingredients: list[dict], style_ref: bool = False
 def build_editorial_prompt(product: dict, sel: dict, style_ref: bool = False) -> str:
     label = f"{product['name'].upper()} {product['number']}.0"
     lines = "\n".join(f"{i}. {ing['visual']} ({ing['note']})" for i, ing in enumerate(sel["ingredients"], 1))
+    spelled = " ".join(ch for ch in f"{product['name'].upper()} {product['number']}.0" if ch != " ")
     return EDITORIAL_TEMPLATE.format(
-        label=label, ingredients=lines, backdrop=sel["backdrop"],
+        label=label, label_spelled=spelled, ingredients=lines, backdrop=sel["backdrop"],
         style_ref=EDITORIAL_STYLE_REF_SENTENCE if style_ref else "",
     )
 
