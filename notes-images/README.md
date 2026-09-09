@@ -80,6 +80,17 @@ vätskefärg aldrig får kopieras från den, och att namnet ska återges bokstav
 etiketten på varje bild. Känt: Shopifys flaskbild för Macquer 29.0 har etiketten "MAQCUER", så den
 genererade bilden återger det.
 
+### Jämna bakgrunder
+
+Modellen lägger ofta in en molnig, fläckig glöd i gradienten. `scripts/smooth_backdrop.py` mäter bakgrundens
+färg rad för rad i bildkanterna, bygger en helt jämn vertikal gradient med en mjuk syntetisk glöd, och byter
+ut bakgrunden via flood fill från kanterna genom kantfria pixlar (motivets konturer stoppar fyllningen, så
+flaska, etikett och ingredienser rörs inte). Ytan under hyllan lämnas orörd.
+
+```bash
+python3 scripts/smooth_backdrop.py output/*_editorial_gpt.png --out output/final_editorial
+```
+
 ## Manuellt i Gemini-appen / AI Studio
 
 1. Öppna `prompts/<nr>_<namn>.txt` och kopiera texten.
