@@ -115,6 +115,17 @@ Uppdatera manifestet när Shopify ändras: spara nya API-svar i `data/shopify-ra
 - Becquerel 108.0 saknar "Toppnoter/Mellannoter/Basnoter"-block i beskrivningen och får därför
   `notes: null` i manifestet.
 
+### Jämn etikett
+
+Modellen ger ofta etikettpappret en molnig, ojämn belysning. `scripts/flatten_label.py` hittar etiketten via
+flaskans geometri (kapsyltopp och kapsylbredd mäts i bilden; etikettens läge relativt dem ligger i
+`data/label_geometry.json`, mätt i referensfotot) och gör en flat-field-korrigering med pappret som referens.
+Text och illustration behåller sina toner. Körs efter bakgrundsutjämningen:
+
+```bash
+python3 scripts/flatten_label.py output/final_editorial/*.jpg --inplace
+```
+
 ## Kända avvikelser mellan Shopify-titel och tryckt etikett
 
 Bilderna återger etiketten som den ser ut på Shopifys flaskfoto. Tre produkter avviker från titeln:
@@ -133,4 +144,5 @@ python3 scripts/build_manifest.py                      # om Shopify-data ändrat
 python3 scripts/generate.py --provider openai --model gpt-image-2 --size 2K --style editorial \
     --style-ref reference/style-ref-editorial.jpg --skus <nr>
 python3 scripts/smooth_backdrop.py output/<nr>_*_editorial_gpt.png --out output/final_editorial
+python3 scripts/flatten_label.py output/final_editorial/<nr>_*.jpg --inplace
 ```
